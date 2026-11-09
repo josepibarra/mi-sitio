@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="es" data-palette="C"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#141c47">
+<script>(function(){try{var t=localStorage.getItem("nodo-theme");if(t!=="light"&&t!=="dark")t=null;if(!t&&window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)t="dark";if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}})()</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%229%22%20fill%3D%22%23141c47%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2212%22%20fill%3D%22none%22%20stroke%3D%22%23d6ec78%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%224.5%22%20fill%3D%22%23d6ec78%22%2F%3E%3C%2Fsvg%3E">
+<meta name="description" content="Cuéntanos qué ocurre en tu organización y qué te gustaría explorar, y acordemos una primera conversación exploratoria sin compromiso con NODO.">
+<meta property="og:title" content="Contacto sobre preparar el talento · NODO">
+<meta property="og:description" content="Cuéntanos qué ocurre en tu organización y qué te gustaría explorar, y acordemos una primera conversación exploratoria sin compromiso con NODO.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_LA">
+<title>Contacto sobre preparar el talento · NODO</title>
+<style>
+/* ============ TOKENS · único lugar donde viven los colores ============ */
+:root{
+ /* Paleta base: «Verde» (identidad actual, con contraste corregido) */
+ --night:#13241e;--ink:#172923;--ink-2:#2c453b;
+ --paper:#f7f5ef;--white:#fffefa;
+ --accent:#d6ec78;--accent-hover:#e6f5a2;--on-accent:#172923;--accent-active:#c2d851;
+ color-scheme:light;--text-placeholder:#616988;--text-disabled:#6f749b;--danger:#b02b27;
+ --surface:#e8eee5;
+ --line:#d3dacd;--line-strong:#8fa397;
+ --muted:#4a5f56;--muted-night:#c6d4ca;--on-night:#f3f6ed;
+ --link-active:#4f6a14;--focus:#56700f;--focus-dark:#d6ec78;
+ --c1:#d8e9d5;--c2:#ece6d9;--c3:#d9dedf;--c4:#ead8cd;
+ --g1:#3d6b52;--g2:#7a5f4c;--g3:#4d6868;--g4:#84564a;
+ --ok-bg:#edf2eb;
+ --radius:22px;--max:1240px;
+ /* Muestras del panel de prueba (se ven igual con cualquier paleta activa) */
+ --sv1:#13241e;--sv2:#d6ec78;--sv3:#f7f5ef;
+ --sa1:#121b3c;--sa2:#c4b8ff;--sa3:#f6f7fc;
+ --sb1:#1b1240;--sb2:#9ed4ff;--sb3:#f8f6fd;
+ --sc1:#141c47;--sc2:#d6ec78;--sc3:#f6f6fc;
+}
+[data-palette="A"]{
+ --night:#121b3c;--ink:#161e42;--ink-2:#2a3568;
+ --paper:#f6f7fc;--white:#ffffff;
+ --accent:#c4b8ff;--accent-hover:#d6ceff;--accent-active:#b1a3f0;--on-accent:#161e42;
+ --surface:#e8ebf8;
+ --line:#d5d9ec;--line-strong:#8a93bd;
+ --muted:#4a5575;--muted-night:#c9d0ea;--on-night:#f3f5fd;
+ --link-active:#3c218d;--focus:#5b3fd9;--focus-dark:#c4b8ff;
+ --c1:#dfe3fa;--c2:#ece6f5;--c3:#dbe6f4;--c4:#f0ddd5;
+ --g1:#3c4a9a;--g2:#5b4bb0;--g3:#3f6a8f;--g4:#9a5b49;
+ --ok-bg:#eef0fa;
+}
+[data-palette="B"]{
+ --night:#1b1240;--ink:#1f1647;--ink-2:#352a70;
+ --paper:#f8f6fd;--white:#ffffff;
+ --accent:#9ed4ff;--accent-hover:#bde3ff;--accent-active:#84c0ef;--on-accent:#1f1647;
+ --surface:#ece8f8;
+ --line:#ddd7ee;--line-strong:#948bb8;
+ --muted:#554a75;--muted-night:#d3cbec;--on-night:#f6f3fd;
+ --link-active:#21608d;--focus:#5a32c8;--focus-dark:#9ed4ff;
+ --c1:#e3dcff;--c2:#d8ebfa;--c3:#e9e3f5;--c4:#f0ddd5;
+ --g1:#4d33a8;--g2:#1f5f8f;--g3:#6b4bb8;--g4:#9a5b49;
+ --ok-bg:#f1eefa;
+}
+[data-palette="C"]{
+ --night:#141c47;--ink:#171f45;--ink-2:#2b3670;
+ --paper:#f6f6fc;--white:#ffffff;
+ --accent:#d6ec78;--accent-hover:#e6f5a2;--on-accent:#171f45;
+ --surface:#e9eaf8;
+ --line:#d7d9ee;--line-strong:#8187b2;
+ --muted:#4f5778;--muted-night:#cbd0ec;--on-night:#f3f5fd;
+ --link-active:#371698;--focus:#5b3fd9;--focus-dark:#d6ec78;
+ --c1:#dde1f8;--c2:#dfd4f8;--c3:#e5eccb;--c4:#f0ddd5;
+ --g1:#2c56a8;--g2:#3f1398;--g3:#3f5a00;--g4:#9a5b49;
+ --ok-bg:#eef0fa;
+}
+[data-theme="dark"]{color-scheme:dark;
+ --paper:#10152c;--white:#19203a;--surface:#212845;--ok-bg:#1e243b;--night:#080c21;
+ --line:#2f3652;--line-strong:#68719e;
+ --ink:#f1f3fa;--ink-2:#daddec;--muted:#b0b6ce;--on-night:#f1f3fa;--muted-night:#b7bcd5;
+ --link-active:#b9b3ff;--focus:#d6ec78;--focus-dark:#d6ec78;
+ --c1:#272a4b;--c2:#32254c;--c3:#2c3112;--c4:#3f271d;
+ --g1:#80a3f0;--g2:#a494f6;--g3:#a0be66;--g4:#dc9880;
+ --danger:#f98f87;--text-placeholder:#979db8;--text-disabled:#6c7391;
+}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line-strong);border-radius:50%;background:transparent;color:inherit}
+.theme-toggle:hover{background:var(--surface)}
+.theme-toggle svg{width:22px;height:22px}
+.theme-toggle[aria-pressed=true] svg path{fill:none}
+.theme-toggle svg{flex:none}
+.file-banner{position:sticky;top:0;z-index:400;background:var(--accent);color:var(--on-accent);padding:12px 20px;font-weight:700;text-align:center}
+/* ============ Base ============ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+svg{max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,h4,p,ul,ol,dl,dd{margin-top:0}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.dark{--focus:var(--focus-dark)}
+::selection{background:var(--accent);color:var(--on-accent)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip{position:fixed;z-index:300;left:16px;top:-80px;padding:12px 18px;background:var(--accent);color:var(--on-accent);border-radius:8px;font-weight:700}
+.skip:focus{top:12px}
+.container{width:min(calc(100% - 40px),var(--max));margin-inline:auto}
+.section{padding:clamp(64px,9vw,112px) 0}
+.surface{background:var(--surface)}
+.surface-white{background:var(--white)}
+.muted{color:var(--muted)}
+.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;line-height:1.4;margin-bottom:20px}
+.eyebrow:before{content:"";flex:0 0 22px;height:2px;background:currentColor}
+.topic-label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--link-active)}
+h1,h2{letter-spacing:-.045em;font-weight:600;line-height:1.06}
+h1{font-size:clamp(2.25rem,1.2rem + 5.2vw,5.4rem)}
+h2{font-size:clamp(1.9rem,1.1rem + 3.4vw,3.8rem)}
+h3{font-size:clamp(1.25rem,1.05rem + .8vw,1.75rem);letter-spacing:-.03em;line-height:1.2;font-weight:700}
+h1,h2,h3{hyphens:manual}
+h1:focus{outline:none}
+.serif{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;letter-spacing:-.05em}
+.lead{font-size:clamp(1.0625rem,1rem + .35vw,1.3125rem);line-height:1.6;max-width:680px}
+.small{font-size:14px;line-height:1.6}
+.prose a,.link-u{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.tag{display:inline-flex;align-items:center;border:1px solid currentColor;border-radius:80px;padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+
+/* ============ Botones y enlaces ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:13px 24px;border:1px solid transparent;border-radius:100px;font-size:15px;font-weight:800;line-height:1.2;text-align:center;transition:transform .2s,background-color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg,.inline-link svg{width:16px;height:16px;flex:0 0 16px;transition:transform .2s}
+.btn:hover svg,.inline-link:hover svg{transform:translateX(4px)}
+.btn-accent{background:var(--accent);color:var(--on-accent)}
+.btn-accent:hover{background:var(--accent-hover)}
+.btn-dark{background:var(--ink);color:var(--white)}
+.btn-dark:hover{background:var(--ink-2)}
+.btn-outline{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-outline:hover{background:var(--white)}
+.btn-outline-light{border-color:var(--muted-night);color:var(--on-night)}
+.btn-outline-light:hover{background:color-mix(in srgb,var(--white) 10%,transparent)}
+.inline-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:15px;font-weight:800;border-bottom:1px solid currentColor;transition:gap .2s}
+.inline-link:hover{gap:16px}
+.button-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+
+/* ============ Cabecera ============ */
+.site-header{position:sticky;top:0;z-index:100;background:var(--paper);background:color-mix(in srgb,var(--paper) 96%,transparent);border-bottom:1px solid var(--line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.nav-wrap{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0;min-height:44px}
+.brand-mark{width:35px;height:35px;display:inline-grid;place-items:center}
+.brand-name{display:flex;flex-direction:column;line-height:1}
+.brand-name b{font-size:25px;letter-spacing:-.08em;font-weight:900}
+.brand-name small{font-size:12px;letter-spacing:.16em;font-weight:800;margin-top:4px}
+.nav-list{display:flex;align-items:center;gap:6px;list-style:none;margin:0;padding:0}
+.nav-list a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-size:14px;font-weight:700;color:var(--ink-2);border-radius:8px;transition:color .2s,background-color .2s}
+.nav-list a:hover{background:var(--surface)}
+.nav-list a[aria-current=page]{color:var(--link-active);box-shadow:inset 0 -2px 0 currentColor;border-radius:0}
+.header-actions{display:flex;align-items:center;gap:12px}
+.nav-cta{min-height:44px;padding:10px 20px;white-space:nowrap;font-size:14px}
+.menu-toggle{display:none;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--line-strong);border-radius:50%;background:transparent}
+.menu-toggle svg{width:22px;height:22px}
+.mobile-nav{display:none;padding:10px 20px 24px;border-top:1px solid var(--line);background:var(--paper);max-height:calc(100vh - 69px);max-height:calc(100dvh - 69px);overflow-y:auto;overscroll-behavior:contain}
+.mobile-nav.open{display:block}
+.mobile-nav a:not(.btn){display:flex;align-items:center;min-height:52px;font-size:18px;font-weight:700;border-bottom:1px solid var(--line)}
+.mobile-nav a[aria-current=page]{color:var(--link-active)}
+.mobile-nav .btn{margin-top:18px;display:flex;width:100%}
+
+/* ============ Hero ============ */
+.hero{background:var(--night);color:var(--on-night);position:relative;overflow:hidden;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 40%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 45%);pointer-events:none;z-index:-1}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:40px;padding-top:72px;padding-bottom:64px}
+.hero .eyebrow{color:var(--accent)}
+.hero h1{max-width:12.5em;margin-bottom:26px;font-size:clamp(2.25rem,1.2rem + 4.4vw,4.6rem)}
+.hero h1 .serif{color:var(--accent)}
+.hero-sub{color:var(--muted-night);max-width:520px;font-size:clamp(1.0625rem,1rem + .3vw,1.1875rem);line-height:1.7;margin-bottom:30px}
+.hero-visual{width:min(100%,500px);margin-inline:auto}
+.visual-wrap{position:relative}
+.visual{position:relative;aspect-ratio:1;width:100%}
+.ring-fixed{position:absolute;inset:0;border:1px solid var(--muted-night);border-radius:50%;opacity:.55}
+.ring-fixed.r2{inset:15%;border-style:dashed;opacity:.4}
+.ring-fixed.r3{inset:29%;opacity:.25}
+.ring{position:absolute;inset:0;animation:spin 140s linear infinite}
+.visual.paused .ring{animation-play-state:paused}
+.dot{position:absolute;width:20px;height:20px;border:5px solid var(--night);background:var(--accent);border-radius:50%;box-shadow:0 0 0 1px var(--muted-night)}
+.dot.d1{top:-2%;left:calc(50% - 10px)}.dot.d2{top:calc(50% - 10px);right:-2%}.dot.d3{bottom:-2%;left:calc(50% - 10px)}.dot.d4{top:calc(50% - 10px);left:-2%}
+.core{position:absolute;inset:25.5%;border-radius:50%;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;box-shadow:0 0 90px color-mix(in srgb,var(--accent) 22%,transparent)}
+.core svg{width:56%;height:56%}
+.orbital-labels{position:absolute;inset:0;pointer-events:none}
+.orbital-labels a{position:absolute;pointer-events:auto;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:80px;background:var(--surface);color:var(--ink);font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 12px 30px color-mix(in srgb,var(--night) 55%,transparent);transition:transform .2s,background-color .2s}
+.orbital-labels a:hover{transform:translateY(-2px);background:var(--accent)}
+.orbital-labels .a{top:6%;right:0}.orbital-labels .b{right:0;bottom:14%;background:var(--c1)}.orbital-labels .c{bottom:5%;left:0;background:var(--c4)}.orbital-labels .d{left:0;top:22%;background:var(--c2)}
+.motion-toggle{display:flex;align-items:center;gap:8px;margin:16px auto 0;min-height:44px;padding:0 14px;border:1px solid var(--muted-night);border-radius:80px;background:transparent;color:var(--muted-night);font-size:13px;font-weight:700}
+.motion-toggle:hover{background:color-mix(in srgb,var(--white) 10%,transparent)}
+.motion-toggle svg{width:14px;height:14px}
+.proof{border-top:1px solid color-mix(in srgb,var(--muted-night) 35%,transparent)}
+.proof-inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.proof-item{display:flex;gap:12px;align-items:flex-start;padding:22px 20px 22px 0;font-size:14px;line-height:1.5;color:var(--on-night)}
+.proof-item svg{flex:0 0 18px;width:18px;height:18px;margin-top:2px;color:var(--accent)}
+.proof-item a{display:flex;gap:12px;align-items:flex-start;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+.proof-item.slot{color:var(--muted-night)}
+
+/* ============ Encabezados de sección ============ */
+.split-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.65fr);gap:30px;align-items:end;margin-bottom:44px}
+.section-caption{font-size:16px;line-height:1.7;color:var(--muted);max-width:420px;margin:0 0 4px auto}
+
+/* ============ Desafíos ============ */
+.challenge-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.challenge{min-height:340px;position:relative;overflow:hidden;border-radius:var(--radius);padding:34px;display:flex;flex-direction:column;align-items:flex-start;transition:transform .25s,box-shadow .25s}
+.challenge:hover{transform:translateY(-4px);box-shadow:0 24px 60px color-mix(in srgb,var(--night) 14%,transparent)}
+.challenge:nth-child(1){background:var(--c1)}.challenge:nth-child(2){background:var(--c2)}.challenge:nth-child(3){background:var(--c3)}.challenge:nth-child(4){background:var(--c4)}
+.challenge-index{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.challenge h3{font-size:clamp(1.625rem,1.2rem + 1.4vw,2.5rem);max-width:11em;line-height:1.1;margin:22px 0 10px;position:relative;z-index:2}
+.challenge p{font-size:16px;line-height:1.6;max-width:20em;position:relative;z-index:2}
+.challenge .inline-link{margin-top:auto;position:relative;z-index:3}
+.challenge-graphic{position:absolute;width:210px;height:210px;right:-26px;bottom:-14px;opacity:.7;pointer-events:none}
+.challenge-graphic svg{width:100%;height:100%}
+.service-hint{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;padding-top:22px}
+.service-hint p{margin:0;color:var(--muted)}
+
+/* ============ Entrada por rol ============ */
+.roles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:8px}
+.role{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:24px}
+.role h3{font-size:19px;margin-bottom:12px}
+.role ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.role a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:700;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;color:var(--link-active)}
+.role a:hover{text-decoration-thickness:2px}
+.note{border:1px dashed var(--line-strong);border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.55;color:var(--muted);background:var(--ok-bg)}
+.note b{color:var(--ink)}
+
+/* ============ Diagnóstico (teaser) ============ */
+.diag-teaser{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:center;background:var(--night);color:var(--on-night);border-radius:26px;padding:clamp(28px,5vw,64px);position:relative;overflow:hidden}
+.diag-teaser p{color:var(--muted-night)}
+.diag-teaser .eyebrow{color:var(--accent)}
+.diag-teaser h2{font-size:clamp(1.75rem,1.2rem + 2.4vw,3.2rem)}
+
+/* ============ Resultados ============ */
+.outcome-grid{border-top:1px solid var(--line-strong);display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.outcome{padding:30px 32px 32px 0;border-bottom:1px solid var(--line-strong)}
+.outcome:nth-child(3n+2),.outcome:nth-child(3n+3){padding-left:32px;border-left:1px solid var(--line-strong)}
+.outcome-number{font-family:Georgia,serif;font-style:italic;color:var(--link-active);font-size:26px;margin-bottom:18px;display:block}
+.outcome h3{font-size:21px;margin-bottom:8px}
+.outcome p{font-size:16px;line-height:1.6;color:var(--muted);margin:0;max-width:300px}
+
+/* ============ Método ============ */
+.method-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:44px 0 30px}
+.method-card{border-top:2px solid var(--ink);padding:22px 18px 26px 0}
+.method-card .step{font-family:Georgia,serif;font-style:italic;color:var(--link-active);font-size:22px;display:block}
+.method-card h3{font-size:clamp(1.5rem,1.2rem + 1vw,1.9rem);margin:36px 0 12px}
+.method-card p{font-size:16px;line-height:1.65;color:var(--muted)}
+.method-bar{display:flex;align-items:center;justify-content:space-between;border-radius:var(--radius);background:var(--night);color:var(--on-night);padding:30px 36px;gap:20px;flex-wrap:wrap}
+.method-bar strong{font-size:clamp(1.25rem,1.1rem + .6vw,1.6rem);letter-spacing:-.03em}
+.method-bar span{display:block;color:var(--muted-night);margin-top:6px}
+
+/* ============ Principios ============ */
+.principle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
+.principle-card{padding:32px;background:var(--white);border-radius:18px;display:flex;flex-direction:column}
+.principle-card svg{width:40px;height:40px;margin-bottom:28px;color:var(--g1)}
+.principle-card h3{font-size:22px;margin-bottom:10px}
+.principle-card p{color:var(--muted);margin-bottom:0}
+
+/* ============ Insights ============ */
+.insight-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.insight-card{background:var(--white);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s}
+.insight-card:hover{transform:translateY(-4px)}
+.insight-art{height:180px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.insight-art svg{width:82%;height:84%;max-width:300px}
+.insight-card:nth-child(1) .insight-art{background:var(--c1)}.insight-card:nth-child(2) .insight-art{background:var(--c2)}.insight-card:nth-child(3) .insight-art{background:var(--c3)}
+.insight-body{padding:26px;display:flex;flex-direction:column;flex:1;gap:12px}
+.insight-body .topic-label{margin-top:4px}
+.insight-body h3{font-size:22px;margin:0}
+.insight-body p{color:var(--muted);margin:0}
+.insight-body .inline-link{margin-top:auto;align-self:flex-start}
+.pending{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--ink-2);background:var(--ok-bg);border:1px solid var(--line-strong);border-radius:50px;padding:5px 11px}
+
+/* ============ CTA final y pie ============ */
+.final-cta{background:var(--accent);color:var(--on-accent);padding:clamp(64px,8vw,96px) 0;overflow:hidden;position:relative}
+.final-cta:after{content:"";position:absolute;right:-150px;bottom:-290px;border:75px solid color-mix(in srgb,var(--ink) 9%,transparent);border-radius:50%;width:540px;height:540px;pointer-events:none}
+.final-cta .container{position:relative;z-index:1}
+.final-cta h2{font-size:clamp(2.1rem,1.2rem + 4vw,4.8rem);max-width:14em;margin:0 0 22px}
+.final-cta p{font-size:clamp(1.0625rem,1rem + .3vw,1.1875rem);max-width:640px;line-height:1.65;margin-bottom:30px}
+footer{background:var(--night);color:var(--on-night);padding:64px 0 26px}
+.footer-main{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr) minmax(0,.9fr);gap:40px;padding-bottom:48px}
+.footer-desc{color:var(--muted-night);font-size:15px;line-height:1.7;max-width:340px;margin:22px 0 18px}
+.footer-links{display:flex;flex-direction:column}
+.footer-links b{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-night);margin-bottom:8px}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px;font-size:15px}
+.footer-links a:hover{color:var(--accent)}
+.footer-low{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid color-mix(in srgb,var(--muted-night) 35%,transparent);padding-top:22px;color:var(--muted-night);font-size:13px;line-height:1.6}
+.footer-low a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+
+/* ============ Páginas interiores ============ */
+.page-hero{background:var(--night);color:var(--on-night);padding:clamp(64px,8vw,96px) 0;position:relative;overflow:hidden}
+.page-hero:after{content:"";position:absolute;right:-120px;top:-230px;width:500px;height:500px;border:1px solid var(--muted-night);opacity:.4;border-radius:50%;box-shadow:0 0 0 80px color-mix(in srgb,var(--white) 3%,transparent),0 0 0 160px color-mix(in srgb,var(--white) 3%,transparent);pointer-events:none}
+.page-hero .container{position:relative;z-index:1}
+.page-hero .eyebrow{color:var(--accent)}
+.page-hero h1{max-width:13em;margin:0 0 24px}
+.page-hero h1 .serif{color:var(--accent)}
+.page-hero .lead{color:var(--muted-night);margin-bottom:0}
+.page-hero .button-row{margin-top:32px}
+.crumbs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted-night);margin-bottom:22px}
+.crumbs a{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:3px}
+.intro-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px}
+.intro-grid h2{max-width:11em}
+.intro-grid p{font-size:clamp(1.0625rem,1rem + .3vw,1.1875rem);line-height:1.75;color:var(--muted)}
+.band{padding:52px 0;background:var(--surface)}
+.band-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.band-inner h3{font-size:clamp(1.375rem,1.1rem + 1vw,2rem);max-width:700px;margin:0}
+.switch{display:inline-flex;gap:4px;padding:6px;background:var(--surface);border-radius:70px;margin:20px 0 28px;flex-wrap:wrap}
+.switch button{border:0;background:transparent;border-radius:100px;padding:0 22px;min-height:44px;font-weight:700;font-size:15px;color:var(--ink-2)}
+.switch button[aria-pressed=true]{background:var(--ink);color:var(--white)}
+.solution-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.solution-row{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--white);display:flex;justify-content:space-between;gap:16px;transition:border-color .2s,transform .2s}
+.solution-row:hover{border-color:var(--line-strong);transform:translateY(-3px)}
+.solution-row h3{margin:14px 0 10px}
+.solution-row p{color:var(--muted);max-width:30em}
+.arrow-circle{flex:0 0 40px;width:40px;height:40px;border:1px solid var(--line-strong);border-radius:50%;display:grid;place-items:center}
+.arrow-circle svg{width:16px;height:16px}
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:14px;align-items:start}
+.service-item{border:1px solid var(--line);border-radius:14px;background:var(--white);overflow:hidden}
+.service-item summary{padding:22px 24px;cursor:pointer;font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:space-between;gap:16px;list-style:none;min-height:44px}
+.service-item summary::-webkit-details-marker{display:none}
+.service-item summary:after,.faq-list summary:after{content:"+";font-weight:400;font-size:26px;flex:0 0 auto}
+.service-item[open] summary:after,.faq-list details[open] summary:after{content:"−"}
+.service-body{padding:0 24px 24px;color:var(--muted)}
+.service-body ul{margin:0 0 16px;padding-left:20px}
+.service-body li{padding-bottom:6px}
+.service-body .inline-link{color:var(--ink)}
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;margin-top:40px}
+.problem{background:var(--white);border-radius:18px;padding:30px;border:1px solid var(--line)}
+.problem b{color:var(--link-active);font-family:Georgia,serif;font-style:italic;font-size:26px;font-weight:400}
+.problem h3{font-size:22px;margin:22px 0 10px}
+.problem p{color:var(--muted);margin:0}
+.detail-two{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,72px)}
+.bullet-list{display:grid;gap:12px;padding:0;margin:22px 0;list-style:none}
+.bullet-list li{display:flex;gap:14px;font-size:17px;line-height:1.55;align-items:flex-start}
+.bullet-list li:before{content:"↗";font-weight:800;color:var(--link-active);font-size:18px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.chips a{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--line-strong);border-radius:60px;padding:0 18px;font-size:15px;font-weight:700;transition:background-color .2s,border-color .2s}
+.chips a:hover{background:var(--white);border-color:var(--ink)}
+.faq-list{border-top:1px solid var(--line-strong)}
+.faq-list details{border-bottom:1px solid var(--line-strong)}
+.faq-list summary{list-style:none;cursor:pointer;padding:20px 8px 20px 0;font-size:clamp(1.0625rem,1rem + .4vw,1.25rem);font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list p{color:var(--muted);max-width:820px;margin:0 0 24px}
+.dark-slab{background:var(--night);color:var(--on-night);padding:clamp(28px,5vw,64px);border-radius:26px}
+.dark-slab .eyebrow{color:var(--accent)}
+.dark-slab h2{max-width:14em;font-size:clamp(1.75rem,1.2rem + 2.4vw,3.2rem)}
+.dark-slab p{color:var(--muted-night)}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px;margin-top:36px}
+.pillar{background:var(--white);border-radius:18px;padding:30px}
+.pillar h3{margin:18px 0 12px;font-size:22px}
+.pillar p{color:var(--muted);margin:0}
+.placeholder{border:2px dashed var(--line-strong);border-radius:18px;padding:32px;background:var(--ok-bg)}
+.placeholder-label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-2);font-weight:800}
+.placeholder h3{margin:18px 0 10px}
+.placeholder p{color:var(--muted);margin:0}
+.process-list{display:grid}
+.process-item{display:grid;grid-template-columns:90px minmax(0,1fr) minmax(0,.9fr);gap:32px;align-items:start;padding:30px 0;border-top:1px solid var(--line-strong)}
+.process-item .number{font-family:Georgia,serif;font-style:italic;font-size:clamp(2rem,1.5rem + 1.6vw,2.75rem);color:var(--link-active)}
+.process-item h3{font-size:clamp(1.75rem,1.3rem + 1.4vw,2.4rem);margin:8px 0 12px}
+.process-item p{color:var(--muted);margin:0}
+.deliverables{background:var(--white);padding:22px;border-radius:14px;font-size:15px;line-height:1.7}
+.deliverables b{display:block;margin-bottom:8px}
+.deliverables p{margin:10px 0 0;font-size:14px}
+.loop{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:28px 0 0}
+.loop span{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:80px;border:1px solid var(--muted-night);font-weight:700;font-size:15px}
+.loop i{font-style:normal;color:var(--accent);font-weight:800}
+
+/* ============ Contacto ============ */
+.contact-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,88px)}
+.contact-side h2{font-size:clamp(1.9rem,1.3rem + 2vw,2.9rem)}
+.contact-side p{color:var(--muted)}
+.next-steps{list-style:none;margin:26px 0;padding:0;display:grid;gap:18px;counter-reset:s}
+.next-steps li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:14px;align-items:start;counter-increment:s}
+.next-steps li:before{content:counter(s);width:36px;height:36px;border-radius:50%;border:1px solid var(--ink);display:grid;place-items:center;font-weight:800}
+.next-steps b{display:block}
+.next-steps span{color:var(--muted)}
+.contact-note{margin-top:20px}
+.form-panel{background:var(--white);border:1px solid var(--line);padding:clamp(22px,4vw,38px);border-radius:22px}
+.form-panel>h2{font-size:clamp(1.5rem,1.2rem + 1vw,2rem);margin-bottom:8px}
+.demo-banner{display:flex;gap:10px;align-items:flex-start;background:var(--ok-bg);border:1px solid var(--line-strong);border-radius:12px;padding:12px 16px;font-size:14px;line-height:1.55;margin:16px 0 24px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+.field.full{grid-column:1/-1}
+.field label{font-size:14px;font-weight:700}
+.field input,.field select,.field textarea{background:var(--paper);border:1px solid var(--muted);padding:12px 14px;border-radius:10px;min-height:48px;width:100%}
+.field textarea{min-height:130px;resize:vertical}
+.field input[aria-invalid=true],.field select[aria-invalid=true],.field textarea[aria-invalid=true]{border-width:2px;border-color:var(--danger)}
+.field-error{font-size:14px;font-weight:700;color:var(--danger);margin:0}
+.form-hint{font-size:14px;line-height:1.6;color:var(--muted);margin:14px 0 0}
+.form-result{margin-top:24px;background:var(--ok-bg);border:1px solid var(--line-strong);padding:22px;border-radius:14px}
+.form-result:focus{outline:none}
+.form-result h3{font-size:20px;margin-bottom:10px}
+.summary{white-space:pre-wrap;word-break:break-word;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px;line-height:1.6;margin:12px 0 16px}
+.err-summary{border:2px solid var(--danger);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:15px}
+.err-summary:focus{outline:none}
+.err-summary ul{margin:8px 0 0;padding-left:20px}
+.err-summary a{text-decoration:underline}
+
+/* ============ Diagnóstico ============ */
+.diag{max-width:820px;margin-inline:auto}
+.diag fieldset{border:0;margin:0;padding:0;min-width:0}
+.diag legend{font-size:clamp(1.375rem,1.1rem + 1.2vw,2rem);font-weight:700;letter-spacing:-.03em;line-height:1.2;margin-bottom:22px;padding:0}
+.progress{display:flex;gap:6px;margin:0 0 26px;padding:0;list-style:none}
+.progress li{flex:1;height:6px;border-radius:4px;background:var(--line)}
+.progress li.done{background:var(--ink)}
+.progress li.now{background:var(--focus);height:10px;align-self:center}
+.opt{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line-strong);border-radius:14px;margin-bottom:10px;background:var(--white);cursor:pointer;min-height:56px;transition:border-color .2s,background-color .2s}
+.opt:hover{border-color:var(--ink)}
+.opt input{flex:0 0 22px;width:22px;height:22px;margin:2px 0 0;accent-color:var(--ink)}
+.opt.is-checked{border-color:var(--ink);background:var(--c1);box-shadow:inset 0 0 0 1px var(--ink)}
+.opt:has(input:checked){border-color:var(--ink);background:var(--c1);box-shadow:inset 0 0 0 1px var(--ink)}
+.opt:has(input:focus-visible){outline:3px solid var(--focus);outline-offset:3px}
+.diag-nav{display:flex;justify-content:space-between;gap:12px;margin-top:22px;flex-wrap:wrap}
+.result-card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:clamp(24px,4vw,40px)}
+.result-card:focus{outline:none}
+.result-card h2{font-size:clamp(1.75rem,1.2rem + 2vw,2.75rem);margin-bottom:12px}
+.bars{display:grid;gap:10px;margin:22px 0 26px;padding:0;list-style:none}
+.bars li{display:grid;grid-template-columns:minmax(0,13em) minmax(0,1fr) 3.2em;gap:12px;align-items:center;font-size:15px}
+.bars .bar{height:10px;border-radius:6px;background:var(--line);overflow:hidden}
+.bars .bar i{display:block;height:100%;background:var(--link-active);border-radius:6px}
+
+/* ============ Notas de prototipo, 404 ============ */
+.qa-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-strong)}
+.qa-list li{display:grid;grid-template-columns:90px minmax(0,1fr);gap:18px;padding:16px 0;border-bottom:1px solid var(--line-strong)}
+.qa-list b{font-size:14px;letter-spacing:.04em}
+.qa-list.wide li{grid-template-columns:minmax(150px,230px) minmax(0,1fr);gap:28px}
+.qa-list span{min-width:0}
+.checks{display:grid;gap:10px;margin:18px 0;padding-left:20px}
+.nf{text-align:left}
+
+/* ============ Panel de prueba ============ */
+.lab-btn{position:fixed;right:14px;bottom:14px;z-index:200;width:48px;height:48px;padding:0;justify-content:center;border-radius:50%;border:2px solid var(--white);background:var(--ink);color:var(--white);font-size:14px;font-weight:800;display:flex;align-items:center;gap:8px;box-shadow:0 10px 30px color-mix(in srgb,var(--night) 40%,transparent)}
+.lab-btn:hover{background:var(--ink-2)}
+.lab-btn svg{width:20px;height:20px}.lab-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.lab{position:fixed;right:14px;bottom:72px;z-index:200;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 100px);overflow:auto;background:var(--white);color:var(--ink);border:1px solid var(--ink);border-radius:18px;padding:20px;box-shadow:0 24px 60px color-mix(in srgb,var(--night) 35%,transparent)}
+.lab[hidden]{display:none}
+.lab h2{font-size:18px;letter-spacing:-.01em;margin-bottom:6px;line-height:1.2}
+.lab p{font-size:14px;color:var(--muted);margin:0 0 14px}
+.lab fieldset{border:0;margin:0 0 16px;padding:0}
+.lab legend{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;padding:0}
+.lab label{display:flex;align-items:center;gap:10px;min-height:40px;font-size:15px;cursor:pointer}
+.lab input{width:20px;height:20px;accent-color:var(--ink)}
+.swatches{display:inline-flex;gap:3px;margin-left:auto}
+.swatches i{width:14px;height:14px;border-radius:50%;border:1px solid var(--ink)}
+.lab .close{display:inline-flex;align-items:center;min-height:44px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.sw-verde i:nth-child(1){background:var(--sv1)}.sw-verde i:nth-child(2){background:var(--sv2)}.sw-verde i:nth-child(3){background:var(--sv3)}
+.sw-A i:nth-child(1){background:var(--sa1)}.sw-A i:nth-child(2){background:var(--sa2)}.sw-A i:nth-child(3){background:var(--sa3)}
+.sw-B i:nth-child(1){background:var(--sb1)}.sw-B i:nth-child(2){background:var(--sb2)}.sw-B i:nth-child(3){background:var(--sb3)}
+.sw-C i:nth-child(1){background:var(--sc1)}.sw-C i:nth-child(2){background:var(--sc2)}.sw-C i:nth-child(3){background:var(--sc3)}
+body.hide-proto [data-proto]{display:none!important}
+
+/* ============ Responsive ============ */
+@media(max-width:1050px){
+ .nav-list{gap:0}.nav-list a{padding:0 9px;font-size:13px}
+ .roles{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .footer-main{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.footer-main>div:first-child{grid-column:1/-1}
+}
+@media(max-width:860px){
+ .nav-list,.header-actions .nav-cta{display:none}
+ .menu-toggle{display:inline-flex}
+ .nav-wrap{min-height:68px}
+ .hero-inner{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:56px;padding-bottom:40px}
+ .hero-visual{width:min(88%,460px)}
+ .proof-inner{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .split-head,.intro-grid,.detail-two,.contact-grid,.diag-teaser{grid-template-columns:minmax(0,1fr);gap:16px}
+ .section-caption{margin:0}
+ .outcome-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .outcome:nth-child(n){padding:26px 24px 26px 0;border-left:0}
+ .outcome:nth-child(2n){border-left:1px solid var(--line-strong);padding-left:26px}
+ .method-rail{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .process-item{grid-template-columns:64px minmax(0,1fr);gap:14px 18px}
+ .process-item .deliverables{grid-column:2}
+ .challenge-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:560px){
+ .container{width:calc(100% - 32px)}
+ .hero-visual{width:100%}
+ .orbital-labels{position:static;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px;pointer-events:auto}
+ .orbital-labels a{position:static}
+ .proof-inner,.roles,.method-rail,.outcome-grid,.form-grid{grid-template-columns:minmax(0,1fr)}
+ .outcome:nth-child(n){padding:24px 0;border-left:0}
+ .challenge{min-height:310px;padding:26px}
+ .challenge-graphic{width:170px;height:170px}
+ .method-bar{padding:26px 22px}
+ .footer-main{grid-template-columns:minmax(0,1fr)}
+ .qa-list li,.qa-list.wide li{grid-template-columns:minmax(0,1fr);gap:4px}
+ .bars li{grid-template-columns:minmax(0,1fr) 3.2em}.bars .bar{grid-column:1/-1;order:3}
+ .process-item{grid-template-columns:minmax(0,1fr)}.process-item .deliverables{grid-column:auto}
+ 
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*:before,*:after{transition-duration:.01ms!important;animation:none!important}
+ .motion-toggle{display:none}
+}
+
+/* ============ Quick wins de auditoría (v4) ============ */
+::placeholder{color:var(--text-placeholder);opacity:1}
+.btn:active{transform:none}
+.btn-accent:active{background:var(--accent-active)}
+.btn-outline:active{background:var(--surface)}
+.btn-outline-light:active{background:color-mix(in srgb,var(--white) 16%,transparent)}
+.btn[disabled],.btn[aria-disabled="true"]{background:var(--surface);border-color:var(--line);color:var(--text-disabled);cursor:not-allowed;transform:none}
+@media (forced-colors:active){
+ .challenge,.role,.principle-card,.pillar,.insight-card,.solution-row,.problem,.form-panel,.result-card,.orbital-labels a,.tag,.pending,.btn,.opt,.chips a,.motion-toggle,.deliverables,.core,.dot{border:1px solid CanvasText}
+ .progress li,.bars .bar{border:1px solid CanvasText;background:Canvas}
+ .progress li.done,.progress li.now,.bars .bar i{background:Highlight}
+}
+/* Gráficos: todo el color sale de tokens */
+.s1{stroke:var(--g1)}.s2{stroke:var(--g2)}.s3{stroke:var(--g3)}.s4{stroke:var(--g4)}
+.f1{fill:var(--g1)}.f2{fill:var(--g2)}.f3{fill:var(--g3)}.f4{fill:var(--g4)}.fa{fill:var(--accent)}
+.noscript-box{max-width:720px;margin:48px auto;padding:0 20px}
+.noscript-box h1{font-size:2rem}
+@media(max-width:380px){.header-actions{gap:8px}}
+</style>
+<link rel="canonical" href="https://dominio-por-definir.example/contacto/"><meta property="og:url" content="https://dominio-por-definir.example/contacto/"><meta name="robots" content="noindex,nofollow"></head>
+<body>
+<a href="#contenido" class="skip" id="skip-link">Saltar al contenido</a>
+<header class="site-header" id="header"><div class="container nav-wrap"><a class="brand" href="/" aria-label="NODO Consultoría, ir a inicio"><span class="brand-mark"><svg viewBox="0 0 40 40" width="35" height="35" fill="none" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.6"></circle><circle cx="20" cy="20" r="5.4" fill="currentColor"></circle><path d="M20 3v11M20 26v11M3 20h11M26 20h11" stroke="currentColor" stroke-width="1.6"></path></svg></span><span class="brand-name"><b>NODO</b><small>CONSULTORÍA</small></span></a><nav aria-label="Navegación principal"><ul class="nav-list"><li><a href="/" data-nav="inicio">Inicio</a></li><li><a href="/soluciones/" data-nav="soluciones">Soluciones</a></li><li><a href="/nosotros/" data-nav="nosotros">Nosotros</a></li><li><a href="/metodo/" data-nav="metodo">Cómo trabajamos</a></li><li><a href="/insights/" data-nav="insights">Insights</a></li></ul></nav><div class="header-actions"><a href="/contacto/" class="btn btn-dark nav-cta">Conversemos de tu desafío<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 10h13m-5-5 5 5-5 5"></path></svg></a><button type="button" class="theme-toggle" aria-label="Modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"></circle><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path></svg></button><button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button></div></div><nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil"><a href="/" data-nav="inicio">Inicio</a><a href="/soluciones/" data-nav="soluciones">Soluciones</a><a href="/nosotros/" data-nav="nosotros">Nosotros</a><a href="/metodo/" data-nav="metodo">Cómo trabajamos</a><a href="/insights/" data-nav="insights">Insights</a><a href="/contacto/" class="btn btn-dark">Conversemos de tu desafío<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 10h13m-5-5 5 5-5 5"></path></svg></a></nav></header>
+<main id="contenido" tabindex="-1" data-route="contacto/talento"><section class="page-hero dark"><div class="container"><div class="eyebrow">Contacto / primera conversación</div><h1 tabindex="-1">Empecemos por <span class="serif">entender tu desafío.</span></h1><p class="lead">Cuéntanos qué ocurre en tu organización y qué te gustaría explorar. Sin compromisos prematuros.</p></div></section><section class="section"><div class="container contact-grid"><div class="contact-side"><div class="eyebrow">Qué esperar</div><h2>Una primera charla, <span class="serif">sin compromiso.</span></h2><p>El propósito es escuchar el contexto, identificar objetivos y acordar si existe un camino de colaboración que valga la pena profundizar.</p>
+ <ol class="next-steps"><li><div><b>Nos cuentas tu desafío</b><span>Con el formulario breve, en unas pocas líneas.</span></div></li><li><div><b>Acordamos una conversación</b><span>Para entender el contexto y a quiénes involucra.</span></div></li><li><div><b>Si hay encaje, definimos el alcance</b><span>Objetivos, participantes y entregables, antes de iniciar.</span></div></li></ol>
+ <div class="note contact-note" data-proto=""><b>Por definir en la versión real:</b> plazo de respuesta, duración de la primera conversación, agenda con calendario y canal de mensajería. No se publican valores ni datos de contacto ficticios.</div></div>
+ <div class="form-panel"><h2>Cuéntanos un poco</h2><div class="demo-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Formulario de demostración.</b> Lo que escribas no se envía a ningún servidor ni se almacena; solo genera un resumen en esta pantalla. Evita incluir información confidencial.</span></div>
+ <form id="contact-form" novalidate=""><div id="err-summary" class="err-summary" role="alert" tabindex="-1" hidden=""></div><div class="form-grid">
+ <div class="field"><label for="nombre">Nombre <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" maxlength="120" required=""></div><div class="field"><label for="correo">Correo de trabajo <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@empresa.com" maxlength="120" required=""></div><div class="field full"><label for="pais">País <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><input id="pais" name="pais" type="text" autocomplete="country-name" placeholder="País donde trabajas" maxlength="120" required=""></div>
+ <div class="field full"><label for="tema">¿Qué desafío te gustaría explorar?</label><select id="tema" name="tema"><option value="">Aún no estoy seguro/a</option><option value="organizacion">Evolucionar la organización</option><option value="talento" selected="">Preparar el talento</option><option value="cambio">Movilizar el cambio</option><option value="experiencia">Mejorar la experiencia de trabajo</option></select></div>
+ <div class="field full"><label for="mensaje">¿Qué está ocurriendo en tu organización? <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><textarea id="mensaje" name="mensaje" required="" maxlength="1200" placeholder="Comparte en pocas líneas el contexto, la necesidad o las preguntas que quieres explorar."></textarea></div></div>
+ <div class="button-row"><button type="submit" class="btn btn-dark">Ver el resumen <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 10h13m-5-5 5 5-5 5"></path></svg></button></div><p class="form-hint">* Campos obligatorios.</p></form>
+ <div id="form-result" class="form-result" tabindex="-1" hidden=""></div></div></div></section></main>
+<footer id="footer"><div class="container dark"><div class="footer-main"><div><a class="brand" href="/" aria-label="NODO Consultoría, ir a inicio"><span class="brand-mark"><svg viewBox="0 0 40 40" width="35" height="35" fill="none" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.6"></circle><circle cx="20" cy="20" r="5.4" fill="currentColor"></circle><path d="M20 3v11M20 26v11M3 20h11M26 20h11" stroke="currentColor" stroke-width="1.6"></path></svg></span><span class="brand-name"><b>NODO</b><small>CONSULTORÍA</small></span></a><p class="footer-desc">Estrategia organizacional con las personas en el centro. Una propuesta de consultoría para empresas que necesitan evolucionar con intención.</p><span class="tag" style="color:var(--muted-night)">Marca provisional</span></div><nav class="footer-links" aria-label="Explorar"><b>Explorar</b><a href="/">Inicio</a><a href="/soluciones/">Soluciones</a><a href="/nosotros/">Nosotros</a><a href="/metodo/">Cómo trabajamos</a><a href="/insights/">Insights</a><a href="/diagnostico/">Autodiagnóstico</a><a href="/contacto/">Contacto</a></nav><nav class="footer-links" aria-label="Soluciones"><b>Soluciones</b><a href="/solucion/organizacion/">Evolucionar la organización</a><a href="/solucion/talento/">Preparar el talento</a><a href="/solucion/cambio/">Movilizar el cambio</a><a href="/solucion/experiencia/">Mejorar la experiencia de trabajo</a><a href="/soluciones/servicios/">Ver especialidades</a></nav></div><div class="footer-low"><span>© 2026 NODO · Prototipo conceptual con marca provisional. Sin recolección ni envío de datos.</span><a href="/notas/">Notas de prototipo</a></div></div></footer>
+<noscript><p class="noscript-box">El autodiagnóstico y el formulario de contacto necesitan JavaScript. El resto del contenido se puede leer sin él.</p></noscript>
+<script>
+(function(){'use strict';
+/* ============ Datos ============ */
+const CTA='Conversemos de tu desafío';
+
+const TERR=[
+ {id:'organizacion',num:'01',short:'Evolucionar la organización',tag:'Organización',
+  title:'Tu estructura debe permitir avanzar, no frenar.',
+  desc:'Revisamos cómo se organiza, decide y trabaja tu empresa para que la estrategia se pueda ejecutar.',
+  challenge:'¿Tu estructura, tus procesos o tu modelo de trabajo se quedaron atrás?',
+  intro:'Cuando una estrategia se atasca, rara vez es por falta de ideas. Suele ser por cómo está organizada la empresa: quién decide, cómo fluye el trabajo y qué roles responden por qué. Empezamos por ahí.',
+  problems:[
+   ['Decisiones que se atascan entre áreas','Las decisiones pasan por demasiadas manos o no tienen dueño. El diagnóstico muestra dónde se frena el avance y por qué.'],
+   ['Roles y responsabilidades poco claros','Funciones que se duplican o quedan sin cubrir. Revisamos roles, gobierno y espacios de decisión junto a quienes los ejercen.'],
+   ['Procesos que dificultan la ejecución','Procesos pensados para controlar más que para lograr resultados. Los rediseñamos considerando a quienes los usan cada día.']],
+  audience:'Organizaciones en crecimiento, reestructuración, integración o rediseño de su modelo operativo.',
+  benefits:['Mayor claridad sobre roles, decisiones y responsabilidades','Modelos operativos conectados con la estrategia','Procesos más simples y coordinados','Mejores condiciones para adaptarse'],
+  specs:['transformacion','trabajo'],
+  slab:'Un proyecto de este tipo puede comenzar con un diagnóstico de estructura y decisiones, seguir con el diseño del modelo objetivo junto a los equipos y probarlo en un piloto antes de extenderlo.',
+  faq:[['¿Necesitamos una reestructuración completa?','No necesariamente. El trabajo comienza entendiendo dónde existen fricciones y qué ajustes —incrementales o estructurales— aportarían más valor.'],['¿Cómo participan los equipos?','Combinamos entrevistas, información organizacional y espacios de cocreación para construir propuestas aplicables al contexto real.'],['¿Se contempla la implementación?','Sí. El diseño puede acompañarse de pilotos, comunicación, gobierno de cambios y seguimiento a la adopción.']]},
+ {id:'talento',num:'02',short:'Preparar el talento',tag:'Talento',
+  title:'Las capacidades de mañana se construyen hoy.',
+  desc:'Conectamos la estrategia de talento, las habilidades y el aprendizaje con las prioridades reales del negocio.',
+  challenge:'¿Tu empresa tiene las capacidades que necesitará para lo que viene?',
+  intro:'Formar a todos en todo no es una estrategia de talento. Primero se define qué capacidades necesita el negocio; después, cómo se atraen, se desarrollan y se retienen. Conectamos ambas cosas.',
+  problems:[
+   ['Habilidades críticas que no se están desarrollando','Sin un mapa de capacidades, la inversión en aprendizaje se reparte por costumbre. Lo priorizamos según los cambios que vienen.'],
+   ['Procesos de talento desconectados del negocio','Selección, desempeño, carrera y compensación funcionan por separado. Los alineamos para que se refuercen entre sí.'],
+   ['Formación sin una ruta clara de aplicación','Los cursos terminan, pero el trabajo no cambia. Diseñamos rutas que incluyen práctica, acompañamiento y medición.']],
+  audience:'Equipos de dirección y talento que quieren anticipar capacidades, fortalecer su arquitectura de talento y acelerar el aprendizaje.',
+  benefits:['Prioridades de desarrollo más claras','Sistemas de talento alineados al negocio','Trayectorias de aprendizaje con aplicación','Mayor preparación para nuevos roles y tecnologías'],
+  specs:['talento','formacion'],
+  slab:'Un proyecto de talento puede comenzar con un diagnóstico de capacidades críticas, seguir con el diseño de procesos y rutas de aprendizaje, y cerrar con mecanismos para medir lo que cambia en el trabajo.',
+  faq:[['¿Por dónde empezar si no conocemos las brechas?','Podemos comenzar con un diagnóstico de capacidades críticas vinculado a la estrategia y los cambios esperados.'],['¿Solo diseñan programas de capacitación?','No. También abordamos sistemas de talento, competencias, desempeño, planificación y experiencias de aprendizaje.'],['¿Incluye nuevas habilidades asociadas a IA?','Sí, cuando sean relevantes para los roles y la evolución del trabajo, con un enfoque práctico y contextual.']]},
+ {id:'cambio',num:'03',short:'Movilizar el cambio',tag:'Cambio',
+  title:'Una transformación necesita más que un plan.',
+  desc:'Preparamos a líderes y equipos para entender, asumir y sostener nuevas maneras de trabajar.',
+  challenge:'¿Tu transformación está diseñada, pero cuesta que las personas la adopten?',
+  intro:'Muchas transformaciones están bien diseñadas y aun así no se adoptan. La diferencia suele estar en cómo se prepara a los líderes, cómo se comunica y qué hábitos se sostienen cuando el proyecto termina.',
+  problems:[
+   ['Resistencia o cansancio frente a iniciativas','Cuando llegan demasiados cambios a la vez, la energía se agota. Entendemos qué carga cada grupo y secuenciamos.'],
+   ['Líderes sin herramientas para movilizar equipos','Se espera que los líderes expliquen y sostengan el cambio sin haberlo trabajado. Los preparamos con coaching y espacios de práctica.'],
+   ['Tecnología implementada con baja adopción','La herramienta está instalada, pero se usa poco. Tratamos la adopción como parte del proyecto, no como un anexo.']],
+  audience:'Empresas que emprenden transformaciones culturales, tecnológicas u organizacionales y necesitan alinear a quienes las harán realidad.',
+  benefits:['Mayor preparación de personas y líderes','Conversaciones y decisiones más alineadas','Procesos de adopción con seguimiento','Capacidad interna para sostener transformaciones'],
+  specs:['cambio','coaching'],
+  slab:'Un proyecto de cambio puede comenzar evaluando la preparación de la organización, seguir con el mapa de interesados y la red de agentes de cambio, y acompañar la adopción con indicadores acordados.',
+  faq:[['¿Cuándo conviene involucrar gestión del cambio?','Idealmente desde la definición de la transformación, aunque también es posible intervenir en iniciativas que ya están en marcha.'],['¿Trabajan con líderes o con toda la organización?','El alcance depende del desafío; se pueden combinar equipos directivos, mandos medios y grupos afectados por el cambio.'],['¿Cómo se evalúa la adopción?','Se definen indicadores adecuados al cambio concreto, como comportamientos observables, uso y retroalimentación de los equipos.']]},
+ {id:'experiencia',num:'04',short:'Mejorar la experiencia de trabajo',tag:'Cultura y bienestar',
+  title:'El desempeño también depende de cómo se vive el trabajo.',
+  desc:'Diseñamos culturas y entornos que favorezcan el compromiso, la colaboración y un bienestar sostenible.',
+  challenge:'¿La experiencia diaria de tus equipos ayuda o dificulta sus resultados?',
+  intro:'La cultura se ve en lo que ocurre cada día: cómo se decide, cómo se habla y cuánto se cuida a las personas. Medirla y mejorarla de forma responsable exige método, no solo buenas intenciones.',
+  problems:[
+   ['Desconexión entre cultura declarada y vivida','Los valores están en la pared, pero las prácticas dicen otra cosa. Contrastamos ambas para decidir qué ajustar.'],
+   ['Señales de desgaste o desmotivación','La rotación, el ausentismo o el cansancio pueden tener causas organizacionales. Las exploramos antes de proponer acciones.'],
+   ['Experiencias inconsistentes entre equipos','Dos equipos de la misma empresa pueden vivir realidades muy distintas. Identificamos dónde y por qué.']],
+  audience:'Organizaciones que quieren comprender la experiencia de sus personas y mejorar de forma responsable sus prácticas de trabajo.',
+  benefits:['Mayor claridad sobre la experiencia de los equipos','Prácticas culturales conectadas con el día a día','Entornos más saludables y colaborativos','Acciones de bienestar con enfoque organizacional'],
+  specs:['cultura','bienestar'],
+  slab:'Un proyecto de cultura y bienestar puede comenzar con un diagnóstico de clima y riesgos psicosociales, seguir con el diseño de prácticas junto a los equipos y definir cómo darles seguimiento.',
+  faq:[['¿Cómo abordan el bienestar organizacional?','Desde las condiciones de trabajo, los riesgos y las prácticas de liderazgo; no únicamente desde actividades de bienestar aisladas.'],['¿Qué diferencia existe entre clima y cultura?','El clima observa percepciones de la experiencia actual; la cultura examina patrones, valores y comportamientos compartidos.'],['¿Incluye medición?','Cuando es pertinente, se plantean diagnósticos y mecanismos de seguimiento cuya metodología se acordaría para cada proyecto.']]}
+];
+
+/* Ocho líneas de servicio: ítems tomados del catálogo del brief de benchmarking (con sus calificadores) */
+const SPEC=[
+ {id:'transformacion',name:'Transformación y diseño organizacional',terr:'organizacion',
+  lead:'Revisamos cómo está organizada la empresa, cómo se toman las decisiones y cómo fluye el trabajo, y diseñamos el modelo que la estrategia necesita.',
+  when:['Cuando la estrategia cambió, pero la estructura sigue siendo la de antes','Antes o durante una fusión, integración o reestructuración','Cuando las decisiones se acumulan en pocas personas o se repiten entre áreas'],
+  items:['Transformación organizacional','Diseño de estructuras estratégicas, operativas y tácticas','Diagnóstico organizacional (capas, tramos de control, carga de trabajo)','Diseño del modelo operativo objetivo (TOM)','Diseño de roles, responsabilidades y gobierno (comités, decisiones)','Rediseño de procesos centrado en personas','Integración de personas y cultura en fusiones o reestructuras','Acompañamiento de reestructuras (comunicación, transición, outplacement)']},
+ {id:'trabajo',name:'Nuevas formas de trabajo y agilidad',terr:'organizacion',
+  lead:'Ayudamos a definir cómo se trabaja en equipo, con tecnología y a distancia: acuerdos, marcos y prácticas que se adaptan a cada contexto.',
+  when:['Al pasar a un modelo híbrido o remoto sin acuerdos claros','Cuando se incorpora IA y cambian los roles y los flujos','Si se quiere ordenar prioridades con OKRs o marcos ágiles'],
+  items:['Formas de trabajo ágil','Modelos de trabajo híbrido y remoto (políticas, acuerdos de equipo, desconexión digital)','Rediseño del trabajo con IA (flujos humano-IA, roles y habilidades nuevas)','Implementación de OKRs y modelos de desempeño asociados','Diagnóstico de madurez en agilidad empresarial','Gobierno ágil y PMO de transformación','Design Thinking y facilitación de procesos de innovación','Formación en marcos ágiles (Scrum, Kanban, otros)']},
+ {id:'cambio',name:'Gestión del cambio',terr:'cambio',
+  lead:'Preparamos a las personas para entender, adoptar y sostener un cambio: desde el mapa de interesados hasta la medición de la adopción.',
+  when:['Antes de lanzar una tecnología o un nuevo modelo de trabajo','Cuando una iniciativa en marcha pierde fuerza o genera fatiga','Si se necesita una red interna que acompañe la transición'],
+  items:['Consultoría en gestión del cambio','Evaluación de preparación para el cambio (change readiness)','Mapeo de interesados y estrategia de comunicación del cambio','Red de agentes de cambio (change champions)','Adopción de tecnología e IA (por ejemplo, herramientas de productividad)','Medición de adopción y sostenibilidad del cambio','Gestión de fatiga por cambio','Oficina de transformación']},
+ {id:'talento',name:'Subsistemas de Talento Humano',alias:'Gestión estratégica del talento humano',terr:'talento',
+  lead:'Conectamos los procesos de talento —selección, desempeño, carrera, compensación— con lo que el negocio necesita, y los hacemos coherentes entre sí.',
+  when:['Cuando los procesos de talento funcionan como piezas aisladas','Al planificar qué capacidades necesitará la organización','Si el área de RR. HH. necesita redefinir su propio modelo operativo'],
+  items:['Consultoría en subsistemas de Talento Humano','Planificación estratégica de fuerza laboral y organización basada en habilidades','Perfiles por competencias y descripciones de puesto','Atracción, selección y assessment (como diseño de procesos, no reclutamiento masivo)','Onboarding y offboarding','Gestión del desempeño','Compensación, recompensa total y equidad salarial','Planes de carrera y sucesión','Employer branding y propuesta de valor al empleado (EVP)','Diversidad, equidad e inclusión (DEI)','Diagnóstico y modelo operativo del área de RR. HH.','People analytics básico (encuestas, tableros, benchmarking)']},
+ {id:'formacion',name:'Formación y desarrollo del talento',terr:'talento',
+  lead:'Diseñamos rutas de aprendizaje que parten de las brechas reales y se miden por lo que cambia en el trabajo, no solo por la asistencia.',
+  when:['Si no se sabe qué habilidades faltan o sobran','Cuando la formación existe, pero no se aplica en el día a día','Al abrir programas de reskilling, mentoring o alto potencial'],
+  items:['Formación','Desarrollo de talento','Diagnóstico de brechas de habilidades','Programas de reskilling y upskilling (incluida alfabetización en IA)','Diseño de academias o universidades corporativas','Rutas de aprendizaje (learning journeys)','Programas de alto potencial (HiPo)','Programas de mentoring','Formación de formadores','Medición del impacto de la formación']},
+ {id:'coaching',name:'Coaching y liderazgo',terr:'cambio',
+  lead:'Acompañamos a personas y equipos directivos en su desarrollo como líderes, con procesos individuales, de equipo y programas para mandos medios.',
+  when:['En transiciones de rol o con nuevos liderazgos','Cuando un equipo directivo necesita alinearse','Si se quiere formar capacidad interna de coaching'],
+  items:['Coaching ontológico','Coaching estratégico','Coaching de equipos y de equipos directivos','Coaching ejecutivo para alta gerencia','Programas de liderazgo para mandos medios','Evaluaciones 360 y de liderazgo','Formación de coaches internos y cultura de coaching','Acompañamiento en transiciones de rol (nuevos líderes)','Seguridad psicológica en equipos','Facilitación de conversaciones difíciles y de alineación']},
+ {id:'cultura',name:'Cultura, clima y experiencia del colaborador',terr:'experiencia',
+  lead:'Entendemos cómo se vive la cultura hoy, la comparamos con la que se quiere y diseñamos prácticas concretas para acercarlas.',
+  when:['Cuando los valores declarados no coinciden con lo que ocurre','Para entender el clima y la experiencia de los equipos','Al integrar equipos o adaptar la cultura a entornos híbridos'],
+  items:['Diagnóstico de cultura y medición de clima','Diseño de experiencia del colaborador (employee journey)','Definición y activación de valores y propósito','Engagement y rituales de equipo','Cultura en entornos híbridos','Líderes como portadores de la cultura']},
+ {id:'bienestar',name:'Bienestar y salud mental organizacional',terr:'experiencia',
+  lead:'Evaluamos las condiciones de trabajo que afectan la salud y el desempeño, y diseñamos acciones organizacionales, no solo actividades aisladas.',
+  when:['Si hay señales de desgaste, fatiga o rotación','Para evaluar riesgos psicosociales de forma sistemática','Al rediseñar entornos y ritmos de trabajo más saludables'],
+  items:['Evaluación de riesgos psicosociales','Programas de bienestar integral','Prevención de burnout y fatiga digital','Diseño de entornos laborales saludables']}
+];
+
+const ARTICLES=[
+ {id:'organizacion-ia',label:'Futuro del trabajo',title:'Rediseñar el trabajo con IA empieza por rediseñar las decisiones.',desc:'Preguntas que las organizaciones deberían hacerse antes de modificar roles, flujos y responsabilidades.'},
+ {id:'cambio',label:'Transformación',title:'Por qué las buenas estrategias de cambio no siempre se convierten en acción.',desc:'Una mirada a la preparación de los líderes, la coordinación y los hábitos que sostienen nuevas prácticas.'},
+ {id:'talento',label:'Talento y cultura',title:'Del catálogo de cursos a las capacidades que el negocio necesita.',desc:'Cómo conectar la inversión en aprendizaje con desafíos organizacionales concretos.'}
+];
+
+const ROLES=[
+ {t:'Dirección general',d:['organizacion','cambio']},
+ {t:'RR. HH., Talento y Cultura',d:['talento','experiencia']},
+ {t:'Transformación y Desarrollo Organizacional',d:['cambio','organizacion']},
+ {t:'Operaciones y Transformación digital',d:['organizacion','cambio']}
+];
+
+const STEPS=[
+ ['Entender','Diagnóstico y contexto','Escuchamos el contexto, los datos y las tensiones antes de proponer.','Comprendemos el desafío de negocio, la situación actual, las personas involucradas y las restricciones reales.','Mapa del desafío · Hipótesis de trabajo · Alcance acordado'],
+ ['Diseñar','Opciones y cocreación','Cocreamos opciones y priorizamos lo que tiene sentido implementar.','Desarrollamos alternativas, definimos decisiones clave y validamos con las personas que necesitarán llevarlas a la práctica.','Diseño objetivo · Hoja de ruta · Criterios de priorización'],
+ ['Activar','Acompañamiento y adopción','Acompañamos a líderes y equipos para convertir el diseño en práctica.','Apoyamos el despliegue del diseño mediante liderazgo, comunicación, capacidades y mecanismos de coordinación.','Pilotos y acciones · Habilitación de equipos · Plan de adopción'],
+ ['Sostener','Aprendizaje y ajuste','Definimos señales de avance y ayudamos a ajustar lo que haga falta.','Revisamos señales de avance, fricciones y aprendizajes para ajustar y dejar capacidades dentro de la organización.','Indicadores acordados · Aprendizajes · Plan de continuidad']
+];
+
+const OUTCOMES=[['Claridad para decidir','Roles, estructuras y prioridades más comprensibles.'],['Capacidad de adaptación','Prácticas que permiten responder mejor a nuevos escenarios.'],['Liderazgo que moviliza','Líderes preparados para acompañar decisiones y personas.'],['Talento preparado','Habilidades y aprendizaje conectados con el negocio.'],['Mejores experiencias de trabajo','Cultura y condiciones que favorecen colaborar y crecer.'],['Cambios que se sostienen','Seguimiento de hábitos y adopción más allá del lanzamiento.']];
+
+const HEADLINES={
+ resultado:{label:'Resultado (propuesta principal)',h:'Que la estrategia llegue a <span class="serif">cómo trabaja tu gente.</span>',s:'Rediseñamos estructuras, desarrollamos líderes y acompañamos la adopción para que lo que se decide en dirección se vea en el trabajo diario.'},
+ problema:{label:'Problema del decisor',h:'El plan está claro. <span class="serif">Falta que la organización se mueva.</span>',s:'Rediseñamos estructuras, desarrollamos líderes y acompañamos la adopción para que lo que se decide en dirección se vea en el trabajo diario.'},
+ original:{label:'Versión original',h:'Diseñamos organizaciones que <span class="serif">avanzan con su gente.</span>',s:'Conectamos estrategia, talento, liderazgo y cultura para que los cambios no se queden en el papel y puedan convertirse en nuevas formas de trabajar.'}
+};
+
+/* Autodiagnóstico: cada opción suma a un territorio */
+const DIAG=[
+ ['¿Qué describe mejor lo que hoy frena a tu organización?',[['organizacion','Las decisiones se atascan o no está claro quién responde por qué.'],['talento','Faltan habilidades o no sabemos qué capacidades necesitaremos.'],['cambio','Hay iniciativas en marcha, pero cuesta que las personas las adopten.'],['experiencia','Vemos desgaste, desconexión o experiencias desiguales entre equipos.']]],
+ ['¿Qué cambio tienes sobre la mesa?',[['organizacion','Una reestructuración, una integración o un nuevo modelo operativo.'],['talento','Un plan de talento, una academia o un programa de aprendizaje.'],['cambio','Una tecnología, una herramienta de IA o una transformación que debe adoptarse.'],['experiencia','Un programa de cultura, clima o bienestar.']]],
+ ['¿Qué te gustaría que fuera distinto dentro de un año?',[['organizacion','Que la estructura y los procesos faciliten ejecutar la estrategia.'],['talento','Que tengamos las habilidades y el talento para los próximos retos.'],['cambio','Que líderes y equipos sostengan las nuevas formas de trabajar.'],['experiencia','Que trabajar aquí sea una mejor experiencia para las personas.']]],
+ ['¿Con quién necesitarías trabajar primero?',[['organizacion','Con dirección y responsables de áreas, para decisiones y estructura.'],['talento','Con Talento, RR. HH. y responsables de aprendizaje.'],['cambio','Con líderes y mandos medios que deben movilizar a sus equipos.'],['experiencia','Con los equipos y las personas que viven la experiencia día a día.']]],
+ ['¿Qué señal te preocupa más hoy?',[['organizacion','Reprocesos, cuellos de botella o roles duplicados.'],['talento','Brechas de habilidades en roles clave.'],['cambio','Resistencia, fatiga o baja adopción.'],['experiencia','Rotación, ausentismo o un clima tenso.']]]
+];
+
+/* ============ Piezas ============ */
+const arrow=`<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 10h13m-5-5 5 5-5 5"/></svg>`;
+const checkIcon=`<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="8"/><path d="m6.5 10.2 2.4 2.4 4.6-5"/></svg>`;
+const A=(label,href,cls='inline-link')=>`<a href="${href}" class="${cls}">${label}${arrow}</a>`;
+const brandIcon=`<svg viewBox="0 0 40 40" width="35" height="35" fill="none" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" stroke="currentColor" stroke-width="1.6"/><circle cx="20" cy="20" r="5.4" fill="currentColor"/><path d="M20 3v11M20 26v11M3 20h11M26 20h11" stroke="currentColor" stroke-width="1.6"/></svg>`;
+const brand=`<a class="brand" href="#inicio" aria-label="NODO Consultoría, ir a inicio"><span class="brand-mark">${brandIcon}</span><span class="brand-name"><b>NODO</b><small>CONSULTORÍA</small></span></a>`;
+const byId=(list,id)=>list.find(x=>x.id===id);
+const terrLink=id=>{const t=byId(TERR,id);return `<a href="#solucion/${t.id}">${t.short}</a>`};
+const proto=(html,cls='note')=>`<div class="${cls}" data-proto>${html}</div>`;
+
+const graphic=n=>{
+ if(n===0)return `<svg viewBox="0 0 220 220" fill="none" class="s1" stroke-width="1.6" aria-hidden="true" focusable="false"><circle cx="110" cy="110" r="74"/><circle cx="110" cy="110" r="51"/><circle cx="110" cy="110" r="26"/><path d="M20 110h180M110 20v180M47 47l126 126M47 173L173 47"/><circle cx="110" cy="110" r="6" class="f1"/></svg>`;
+ if(n===1)return `<svg viewBox="0 0 220 220" fill="none" class="s2" stroke-width="1.6" aria-hidden="true" focusable="false"><path d="M35 184V82m47 102V50m47 134V80m47 104V27" stroke-width="14" stroke-linecap="round" opacity=".42"/><path d="M35 160L82 135l47-44 47-56" stroke-width="2.5"/><circle cx="35" cy="160" r="7" class="f2"/><circle cx="82" cy="135" r="7" class="f2"/><circle cx="129" cy="91" r="7" class="f2"/><circle cx="176" cy="35" r="7" class="f2"/></svg>`;
+ if(n===2)return `<svg viewBox="0 0 220 220" fill="none" class="s3" stroke-width="1.5" aria-hidden="true" focusable="false"><circle cx="110" cy="110" r="74" stroke-dasharray="7 9"/><path d="M110 27a83 83 0 0183 83M193 110l-16-11m16 11-14 17M110 193a83 83 0 01-83-83M27 110l16 11m-16-11 14-17" stroke-width="3"/><circle cx="110" cy="110" r="32"/><path d="m97 110 9 9 19-21" stroke-width="3"/></svg>`;
+ return `<svg viewBox="0 0 220 220" fill="none" class="s4" stroke-width="1.7" aria-hidden="true" focusable="false"><circle cx="110" cy="110" r="26"/><circle cx="110" cy="37" r="21"/><circle cx="183" cy="110" r="21"/><circle cx="110" cy="183" r="21"/><circle cx="37" cy="110" r="21"/><path d="M110 58v26m26 26h26m-52 26v26m-52-52h26"/><circle cx="110" cy="110" r="6" class="f4"/></svg>`;
+};
+const art=i=>`<div class="insight-art">${i===0?'<svg viewBox="0 0 280 160" fill="none" class="s1" stroke-width="2" aria-hidden="true" focusable="false"><rect x="42" y="15" width="195" height="130" rx="65"/><path d="M42 80h195M140 15v130"/><circle cx="140" cy="80" r="27" class="fa"/><circle cx="140" cy="80" r="9" class="f1"/></svg>':i===1?'<svg viewBox="0 0 280 160" fill="none" class="s2" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="140" cy="80" r="67"/><path d="M73 80c40-80 91-80 134 0M73 80c40 80 91 80 134 0"/><circle cx="73" cy="80" r="10" class="f2"/><circle cx="207" cy="80" r="10" class="f2"/></svg>':'<svg viewBox="0 0 280 160" fill="none" class="s3" stroke-width="2" aria-hidden="true" focusable="false"><path d="M40 123L104 57l42 36 88-74M40 44l64 41 42-25 88 57"/><circle cx="40" cy="123" r="9" class="f3"/><circle cx="104" cy="57" r="9" class="f3"/><circle cx="146" cy="93" r="9" class="f3"/><circle cx="234" cy="19" r="9" class="f3"/></svg>'}</div>`;
+const mini=n=>n===0?`<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M4 31L17 18l8 6L36 8"/><circle cx="4" cy="31" r="3"/><circle cx="17" cy="18" r="3"/><circle cx="25" cy="24" r="3"/><circle cx="36" cy="8" r="3"/></svg>`:n===1?`<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="9" cy="11" r="5"/><circle cx="31" cy="11" r="5"/><circle cx="20" cy="28" r="6"/><path d="M12 15l6 8M28 15l-6 8M14 11h12"/></svg>`:`<svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="15"/><path d="M12 20l5 5 11-12" stroke-width="2.4"/></svg>`;
+
+function pageHero(kicker,title,lead,buttons='',crumbs=''){return `<section class="page-hero dark"><div class="container">${crumbs}<div class="eyebrow">${kicker}</div><h1 tabindex="-1">${title}</h1><p class="lead">${lead}</p>${buttons?`<div class="button-row">${buttons}</div>`:''}</div></section>`}
+function crumbs(items){return `<nav class="crumbs" aria-label="Ruta de navegación">${items.map((x,i)=>i<items.length-1?`<a href="${x[1]}">${x[0]}</a><span aria-hidden="true">/</span>`:`<span aria-current="page">${x[0]}</span>`).join('')}</nav>`}
+function finalCta(title='¿Y si empezamos por una buena conversación?',text='Cuéntanos qué está cambiando en tu organización. Podemos comenzar por entender el desafío y explorar si tiene sentido trabajar juntos.',topic=''){return `<section class="final-cta"><div class="container"><div class="eyebrow">El siguiente paso</div><h2>${title}</h2><p>${text}</p>${A(CTA,topic?`#contacto/${topic}`:'#contacto','btn btn-dark')}</div></section>`}
+
+/* ============ Inicio ============ */
+function hero(){const H=HEADLINES[state.h]||HEADLINES.resultado;
+ const labels=[['a','cambio','Cambio'],['b','experiencia','Experiencia'],['c','talento','Talento'],['d','organizacion','Organización']];
+ return `<section class="hero dark"><div class="container hero-inner"><div class="hero-copy"><div class="eyebrow">Consultoría de transformación organizacional</div><h1 tabindex="-1">${H.h}</h1><p class="hero-sub">${H.s}</p><div class="button-row">${A(CTA,'#contacto','btn btn-accent')}${A('¿Por dónde empezar? Cinco preguntas','#diagnostico','btn btn-outline-light')}</div></div>
+ <div class="hero-visual"><div class="visual-wrap"><div class="visual${state.paused?' paused':''}" id="visual"><div class="ring-fixed" aria-hidden="true"></div><div class="ring-fixed r2" aria-hidden="true"></div><div class="ring-fixed r3" aria-hidden="true"></div><div class="ring" aria-hidden="true"><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><i class="dot d4"></i></div><div class="core" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2.2" focusable="false"><circle cx="60" cy="60" r="43"/><circle cx="60" cy="60" r="17"/><path d="M60 17v26m0 34v26M17 60h26m34 0h26M30 30l18 18m24 24 18 18M90 30L72 48M48 72 30 90"/><circle cx="60" cy="60" r="5" fill="currentColor"/></svg></div>
+ </div><nav class="orbital-labels" aria-label="Los cuatro desafíos">${labels.map(([c,id,l])=>`<a class="${c}" href="#solucion/${id}" aria-label="${l}: ${byId(TERR,id).short}">${l}</a>`).join('')}</nav></div>
+ <button type="button" class="motion-toggle" id="motion-toggle" aria-pressed="${state.paused}"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4 2h3v12H4zM9 2h3v12H9z"/></svg>Pausar movimiento</button></div></div>
+ <div class="proof"><div class="container proof-inner"><div class="proof-item"><a href="#metodo">${checkIcon}<span>Un método en cuatro momentos, visible desde el primer día</span></a></div><div class="proof-item">${checkIcon}<span>Alcance, responsabilidades y entregables definidos antes de iniciar</span></div><div class="proof-item">${checkIcon}<span>Diagnóstico y cocreación con tu equipo, no un plan impuesto</span></div><div class="proof-item slot" data-proto>${checkIcon}<span>Espacio para equipo y credenciales verificables · por completar</span></div></div></div></section>`}
+
+function challenges(){return `<section class="section"><div class="container"><div class="eyebrow">Empezamos por tus desafíos</div><div class="split-head"><h2>¿Qué necesita cambiar <span class="serif">en tu empresa?</span></h2><p class="section-caption">No necesitas identificar primero un servicio. Identifiquemos juntos el problema que vale la pena resolver.</p></div>
+ <div class="challenge-grid">${TERR.map((s,i)=>`<article class="challenge"><div class="challenge-index">${s.num} / ${s.tag}</div><h3>${s.short}</h3><p>${s.challenge}</p>${A('Explorar este desafío',`#solucion/${s.id}`)}<div class="challenge-graphic">${graphic(i)}</div></article>`).join('')}</div>
+ <div class="service-hint"><p>¿Ya sabes qué especialidad buscas? Explora las ocho líneas de servicio.</p>${A('Ver todas las especialidades','#soluciones/servicios')}</div></div></section>`}
+
+function rolesSection(){return `<section class="section surface"><div class="container"><div class="eyebrow">Otra manera de entrar</div><div class="split-head"><h2>¿Desde qué rol <span class="serif">miras el desafío?</span></h2><p class="section-caption">Cada rol suele empezar por puertas distintas. Elige la tuya y ve directo a las soluciones más cercanas.</p></div>
+ <div class="roles">${ROLES.map(r=>`<div class="role"><h3>${r.t}</h3><ul>${r.d.map(d=>`<li><a href="#solucion/${d}">${byId(TERR,d).short}</a></li>`).join('')}</ul></div>`).join('')}</div>
+ ${proto('<b>Nota de prototipo:</b> la relación entre cada rol y cada desafío es una hipótesis de lenguaje por validar con compradores reales.')}</div></section>`}
+
+function diagTeaser(){return `<section class="section"><div class="container"><div class="diag-teaser dark"><div><div class="eyebrow">Orientación en cinco preguntas</div><h2>¿No sabes por dónde <span class="serif">empezar?</span></h2><p class="lead">Responde cinco preguntas breves y te sugerimos qué desafío explorar primero. No pedimos datos ni guardamos tus respuestas.</p></div><div>${A('Hacer el autodiagnóstico','#diagnostico','btn btn-outline-light')}<p class="small" style="margin:16px 0 0">Es una orientación inicial, no un diagnóstico organizacional.</p></div></div></div></section>`}
+
+function outcomes(){return `<section class="section surface"><div class="container"><div class="eyebrow">Lo que buscamos generar</div><div class="split-head"><h2>El verdadero avance <span class="serif">se nota en cómo trabajamos.</span></h2><p class="section-caption">Mejoras observables, definidas según el contexto de cada organización.</p></div><div class="outcome-grid">${OUTCOMES.map((v,i)=>`<div class="outcome"><span class="outcome-number" aria-hidden="true">0${i+1}</span><h3>${v[0]}</h3><p>${v[1]}</p></div>`).join('')}</div>${proto('<b>Nota de prototipo:</b> no se muestran porcentajes ni métricas porque no existen resultados propios que respalden cifras.')}</div></section>`}
+
+function methodHome(){return `<section class="section surface-white"><div class="container"><div class="eyebrow">Ciclo NODO · nuestra forma de trabajar</div><div class="split-head"><h2>Menos soluciones en serie. <span class="serif">Más transformación en contexto.</span></h2><p class="section-caption">Un método que conecta diagnóstico, cocreación y acompañamiento, sin saltar de la estrategia a una lista de actividades.</p></div>
+ <div class="method-rail">${STEPS.map((s,i)=>`<article class="method-card"><span class="step">0${i+1} / 04</span><h3>${s[0]}</h3><p>${s[2]}</p></article>`).join('')}</div>
+ <div class="method-bar dark"><div><strong>El diseño importa. La adopción también.</strong><span>El método se ajusta a la magnitud y madurez de cada desafío.</span></div>${A('Así trabajamos','#metodo','btn btn-outline-light')}</div></div></section>`}
+
+function principles(){return `<section class="section"><div class="container"><div class="eyebrow">Cómo nos comprometemos</div><div class="split-head"><h2>Consultoría que conecta <span class="serif">lo que se decide con lo que se vive.</span></h2><p class="section-caption">Un método claro, entregables útiles y una relación de trabajo transparente.</p></div>
+ <div class="principle-grid"><article class="principle-card">${mini(0)}<h3>Partimos del negocio.</h3><p>Vinculamos cada intervención con el problema organizacional que necesita resolverse, no con una metodología de moda.</p></article><article class="principle-card">${mini(1)}<h3>Diseñamos con las personas.</h3><p>Involucramos a quienes deciden y a quienes harán posible el cambio, con espacios de escucha y cocreación.</p></article><article class="principle-card">${mini(2)}<h3>Acompañamos la ejecución.</h3><p>Pensamos en capacidades, adopción y seguimiento desde el inicio, no como actividades al final del proyecto.</p></article></div>
+ <p class="small muted" style="margin:26px 0 0">Los procesos, alcances y entregables se definen en conjunto antes de iniciar un proyecto.</p></div></section>`}
+
+function articleCards(){return `<div class="insight-grid">${ARTICLES.map((a,i)=>`<article class="insight-card">${art(i)}<div class="insight-body"><span class="pending">Tema en preparación</span><span class="topic-label">${a.label}</span><h3>${a.title}</h3><p>${a.desc}</p>${A('Ver el esquema del tema',`#insight/${a.id}`)}</div></article>`).join('')}</div>`}
+function insightsSection(){return `<section class="section surface"><div class="container"><div class="eyebrow">Ideas para pensar mejor el cambio</div><div class="split-head"><h2>Perspectivas para <span class="serif">seguir la conversación.</span></h2><p class="section-caption">Temas que estamos preparando para la conversación con líderes de talento, cultura y transformación.</p></div>${articleCards()}<div style="margin-top:28px">${A('Explorar el espacio de insights','#insights')}</div></div></section>`}
+
+function home(){return hero()+challenges()+rolesSection()+diagTeaser()+outcomes()+methodHome()+principles()+insightsSection()+finalCta()}
+
+/* ============ Soluciones ============ */
+function solutionsPage(){return pageHero('Soluciones / dos maneras de encontrar respuestas','Primero el desafío. <span class="serif">Después, la especialidad.</span>','Explora los retos que enfrentan las organizaciones o entra directamente a una disciplina que ya conoces.')
+ +`<section class="section"><div class="container"><div class="eyebrow">Explora a tu manera</div><h2>¿Por dónde <span class="serif">quieres empezar?</span></h2><div class="switch" role="group" aria-label="Modo de exploración"><button id="by-challenge" aria-pressed="true" type="button">Por desafío</button><button id="by-service" aria-pressed="false" type="button">Por especialidad</button></div><div id="explore-content"></div></div></section>`
+ +`<section class="band"><div class="container band-inner"><h3>¿No tienes claro por dónde empezar? Cinco preguntas te orientan.</h3>${A('Hacer el autodiagnóstico','#diagnostico','btn btn-dark')}</div></section>`
+ +finalCta('Tu desafío puede atravesar varias áreas.','Ayudamos a conectar las piezas y a definir por dónde conviene empezar.')}
+function exploreHtml(isService){return isService
+ ?`<p class="small muted" style="margin:0 0 24px">Ocho líneas de especialidad, disponibles para proyectos individuales o integrados. Abre una para ver sus áreas de intervención.</p><div class="service-list">${SPEC.map((c,i)=>`<details class="service-item"><summary><span><span class="topic-label">0${i+1} / Especialidad</span>${c.name}</span></summary><div class="service-body"><ul>${c.items.map(x=>`<li>${x}</li>`).join('')}</ul><a class="inline-link" href="#especialidad/${c.id}">Ver la especialidad${arrow}</a></div></details>`).join('')}</div>`
+ :`<p class="small muted" style="margin:0 0 24px">Cuatro puertas de entrada para problemas de negocio que suelen necesitar varias disciplinas trabajando juntas.</p><div class="solution-list">${TERR.map(s=>`<a class="solution-row" href="#solucion/${s.id}" aria-label="${s.short}: ${s.challenge}"><div><span class="topic-label">${s.num} / Desafío empresarial</span><h3>${s.short}</h3><p>${s.challenge}</p><span class="topic-label" style="color:var(--muted)">${s.specs.map(x=>byId(SPEC,x).name).join(' · ')}</span></div><span class="arrow-circle">${arrow}</span></a>`).join('')}</div>`}
+
+function detailPage(s){return pageHero(`Soluciones / ${s.num}`,s.title,s.desc,`${A(CTA,`#contacto/${s.id}`,'btn btn-accent')}${A('Ver todas las soluciones','#soluciones','btn btn-outline-light')}`,crumbs([['Soluciones','#soluciones'],[s.short,'#solucion/'+s.id]]))
+ +`<section class="section"><div class="container"><div class="intro-grid"><div><div class="eyebrow">El desafío detrás de la solución</div><h2>${s.challenge}</h2></div><p>${s.intro}</p></div><div class="problem-grid">${s.problems.map((p,i)=>`<div class="problem"><b aria-hidden="true">0${i+1}</b><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join('')}</div></div></section>`
+ +`<section class="section surface"><div class="container"><div class="detail-two"><div><div class="eyebrow">Para quién es</div><h2>Cuando hay que pasar <span class="serif">de la intención a la realidad.</span></h2><p class="lead muted">${s.audience}</p></div><div><div class="eyebrow">Mejoras que buscamos habilitar</div><ul class="bullet-list">${s.benefits.map(b=>`<li>${b}</li>`).join('')}</ul><p class="small muted">Los indicadores de avance se acuerdan en cada proyecto.</p></div></div></div></section>`
+ +`<section class="section surface-white"><div class="container"><div class="split-head"><div><div class="eyebrow">Especialidades que articulamos</div><h2>Una solución integral, <span class="serif">no una caja cerrada.</span></h2></div><p class="section-caption">Se seleccionan según alcance, contexto y prioridades. También pueden contratarse de forma independiente.</p></div><div class="chips">${s.specs.map(x=>`<a href="#especialidad/${x}">${byId(SPEC,x).name}</a>`).join('')}</div><div style="margin-top:28px">${A('Ver todas las especialidades','#soluciones/servicios')}</div></div></section>`
+ +`<section class="section"><div class="container"><div class="dark-slab dark"><div class="eyebrow">Cómo intervenimos</div><h2>Diagnóstico, diseño conjunto, implementación y aprendizaje.</h2><p class="lead">${s.slab}</p><div class="button-row" style="margin-top:26px">${A('Conoce el ciclo NODO','#metodo','btn btn-outline-light')}</div></div></div></section>`
+ +`<section class="section surface"><div class="container"><div class="eyebrow">Preguntas frecuentes</div><h2>Antes de <span class="serif">dar el primer paso.</span></h2><div class="faq-list" style="margin-top:32px">${s.faq.map(q=>`<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('')}</div></div></section>`
+ +finalCta('Conversemos de lo que tu organización necesita ahora.','Una conversación exploratoria para entender el contexto y acordar, si existe encaje, cuál podría ser el siguiente paso.',s.id)}
+
+function specialtyPage(c){const t=byId(TERR,c.terr),n=SPEC.indexOf(c)+1;const sibs=t.specs.filter(x=>x!==c.id);
+ return pageHero(`Especialidad / 0${n}`,c.name,c.lead,`${A(CTA,`#contacto/${t.id}`,'btn btn-accent')}${A('Ver todas las especialidades','#soluciones/servicios','btn btn-outline-light')}`,crumbs([['Soluciones','#soluciones'],['Especialidades','#soluciones/servicios'],[c.name,'#especialidad/'+c.id]]))
+ +`<section class="section"><div class="container"><div class="detail-two"><div><div class="eyebrow">Áreas de intervención</div><h2>Qué <span class="serif">podemos hacer.</span></h2>${c.alias?`<p class="muted">También conocida como «${c.alias}».</p>`:''}<p class="small muted">Las áreas se combinan y se acotan según el alcance acordado en cada proyecto.</p></div><ul class="bullet-list">${c.items.map(x=>`<li>${x}</li>`).join('')}</ul></div></div></section>`
+ +`<section class="section surface"><div class="container"><div class="detail-two"><div><div class="eyebrow">Cuándo tiene sentido</div><h2>Señales de que <span class="serif">vale la pena conversar.</span></h2></div><ul class="bullet-list">${c.when.map(x=>`<li>${x}</li>`).join('')}</ul></div></div></section>`
+ +`<section class="section surface-white"><div class="container"><div class="split-head"><div><div class="eyebrow">Se integra con</div><h2>Parte de un desafío <span class="serif">más amplio.</span></h2></div><p class="section-caption">Esta especialidad suele trabajarse dentro del desafío «${t.short}».</p></div><div class="chips"><a href="#solucion/${t.id}">${t.short}</a>${sibs.map(x=>`<a href="#especialidad/${x}">${byId(SPEC,x).name}</a>`).join('')}</div></div></section>`
+ +finalCta('¿Esto se parece a tu situación?','Cuéntanos qué ocurre en tu organización y vemos si esta especialidad, o una combinación de varias, es el camino.',t.id)}
+
+/* ============ Nosotros, método, insights ============ */
+function aboutPage(){return pageHero('Nosotros / filosofía','Organizaciones más capaces. <span class="serif">Personas más protagonistas.</span>','NODO es una propuesta de consultoría concebida para conectar decisiones estratégicas con el funcionamiento real de las organizaciones.')
+ +`<section class="section"><div class="container intro-grid"><div><div class="eyebrow">Lo que creemos</div><h2>El cambio es estratégico. <span class="serif">Y profundamente humano.</span></h2></div><div class="prose"><p>No hay diseño organizacional que funcione sin claridad en las decisiones. Ni estrategia de transformación que avance sin liderazgo, capacidades y confianza.</p><p>Por eso planteamos una práctica que combina pensamiento sistémico, participación y acompañamiento de la ejecución.</p></div></div></section>`
+ +`<section class="section surface"><div class="container"><div class="eyebrow">Principios de trabajo</div><h2>Una manera de <span class="serif">hacer consultoría.</span></h2><div class="pillars"><article class="pillar"><span class="topic-label">01 / Rigor</span><h3>Entender antes de recomendar.</h3><p>Explorar datos, conversaciones y dinámicas que explican los síntomas antes de elegir soluciones.</p></article><article class="pillar"><span class="topic-label">02 / Colaboración</span><h3>Construir con el equipo.</h3><p>Escuchar perspectivas y generar apropiación en quienes tomarán decisiones y pondrán el cambio en práctica.</p></article><article class="pillar"><span class="topic-label">03 / Pragmatismo</span><h3>Dejar capacidad instalada.</h3><p>Priorizar diseños útiles, aprendizaje práctico y seguimiento que faciliten la autonomía de los equipos.</p></article></div></div></section>`
+ +`<section class="section" data-proto><div class="container"><div class="split-head"><div><div class="eyebrow">Equipo y trayectoria</div><h2>La credibilidad requiere <span class="serif">evidencia real.</span></h2></div><p class="section-caption">Espacio reservado para información comprobable sobre integrantes y experiencia.</p></div><div class="placeholder"><span class="placeholder-label">Espacio pendiente de completar · no representa a una persona real</span><h3>Conoce al equipo fundador</h3><p>Incorporar nombres, fotografías, trayectoria profesional verificable, áreas de especialidad y credenciales únicamente cuando estén disponibles y autorizadas para publicación.</p></div></div></section>`
+ +finalCta('Las mejores relaciones empiezan con claridad.','Conversemos sobre tus prioridades y sobre cómo sería trabajar juntos.')}
+
+function methodPage(){return pageHero('Cómo trabajamos / ciclo NODO','El cambio no termina <span class="serif">cuando entregamos el diseño.</span>','Un método consultivo que acompaña desde la comprensión del problema hasta las prácticas que permiten sostener la evolución.',''
+  )+`<section class="section"><div class="container"><div class="eyebrow">Cuatro momentos conectados</div><h2>Un proceso claro, <span class="serif">adaptable a cada reto.</span></h2><p class="lead muted" style="margin-top:20px">Diagnóstico, cocreación y acompañamiento no son fases separadas: se alimentan entre sí a lo largo del proyecto.</p><div class="process-list" style="margin-top:40px">${STEPS.map((e,i)=>`<article class="process-item"><span class="number" aria-hidden="true">0${i+1}</span><div><span class="topic-label">${e[1]}</span><h3>${e[0]}</h3><p>${e[3]}</p></div><div class="deliverables"><b>Ejemplos de entregables posibles</b>${e[4]}<p class="muted">A confirmar según el alcance; no es un paquete garantizado.</p></div></article>`).join('')}</div></div></section>`
+  +`<section class="band"><div class="container band-inner"><h3>Definimos alcance, responsabilidades, hitos y entregables con transparencia antes de comenzar.</h3>${A(CTA,'#contacto','btn btn-dark')}</div></section>`
+  +finalCta('Del problema compartido a un camino posible.','El primer paso es comprender qué se quiere lograr, qué limita el avance y quiénes necesitan participar.')}
+
+function insightsPage(){return pageHero('Insights / perspectiva editorial','Buenas preguntas para <span class="serif">pensar mejores organizaciones.</span>','Ideas y temas para explorar transformación, talento, liderazgo, cultura y nuevas formas de trabajar.')
+ +`<section class="section surface"><div class="container"><div class="eyebrow">Agenda editorial en preparación</div><div class="split-head"><h2>Temas que vale <span class="serif">la pena discutir.</span></h2><p class="section-caption">Temas para explorar con quienes lideran talento, cultura y transformación.</p></div>${articleCards()}${proto('<b>Nota de prototipo:</b> los títulos son propuestas de contenido; todavía no existen artículos publicados ni investigación propia. Las fichas llevan la etiqueta «Tema en preparación» para no aparentar lo contrario.')}</div></section>`
+ +finalCta('¿Hay una pregunta que tu equipo necesita responder?','Podemos comenzar con una conversación sobre el desafío que la inspira.')}
+function insightDetailPage(a){return pageHero('Insights / tema en preparación',a.title,`${a.label} · Esquema de contenido, no una publicación definitiva.`,'',crumbs([['Insights','#insights'],[a.label,'#insight/'+a.id]]))
+ +`<section class="section"><div class="container" style="max-width:820px"><span class="tag">Esquema temático · pendiente de investigación y redacción</span><h2 style="font-size:clamp(1.6rem,1.3rem + 1.2vw,2.2rem);margin:40px 0 16px">El punto de partida</h2><p class="lead muted">${a.desc}</p><p class="muted">Este espacio mostrará el artículo completo cuando esté desarrollado con fuentes, ejemplos y criterio experto.</p><h2 style="font-size:clamp(1.6rem,1.3rem + 1.2vw,2.2rem);margin:40px 0 16px">Preguntas para desarrollar</h2><ul class="bullet-list"><li>¿Qué decisiones organizacionales conviene revisar primero?</li><li>¿Cómo participarán líderes y personas afectadas en el cambio?</li><li>¿Qué señales permitirán aprender y ajustar el enfoque?</li></ul><div style="margin-top:36px">${A('Volver a insights','#insights')}</div></div></section>`+finalCta()}
+
+/* ============ Contacto ============ */
+function contactPage(topic){return pageHero('Contacto / primera conversación','Empecemos por <span class="serif">entender tu desafío.</span>','Cuéntanos qué ocurre en tu organización y qué te gustaría explorar. Sin compromisos prematuros.')
+ +`<section class="section"><div class="container contact-grid"><div class="contact-side"><div class="eyebrow">Qué esperar</div><h2>Una primera charla, <span class="serif">sin compromiso.</span></h2><p>El propósito es escuchar el contexto, identificar objetivos y acordar si existe un camino de colaboración que valga la pena profundizar.</p>
+ <ol class="next-steps"><li><div><b>Nos cuentas tu desafío</b><span>Con el formulario breve, en unas pocas líneas.</span></div></li><li><div><b>Acordamos una conversación</b><span>Para entender el contexto y a quiénes involucra.</span></div></li><li><div><b>Si hay encaje, definimos el alcance</b><span>Objetivos, participantes y entregables, antes de iniciar.</span></div></li></ol>
+ ${proto('<b>Por definir en la versión real:</b> plazo de respuesta, duración de la primera conversación, agenda con calendario y canal de mensajería. No se publican valores ni datos de contacto ficticios.','note contact-note')}</div>
+ <div class="form-panel"><h2>Cuéntanos un poco</h2><div class="demo-banner" role="note"><span aria-hidden="true">ⓘ</span><span><b>Formulario de demostración.</b> Lo que escribas no se envía a ningún servidor ni se almacena; solo genera un resumen en esta pantalla. Evita incluir información confidencial.</span></div>
+ <form id="contact-form" novalidate><div id="err-summary" class="err-summary" role="alert" tabindex="-1" hidden></div><div class="form-grid">
+ ${field('nombre','Nombre','text','name','Tu nombre',true)}${field('correo','Correo de trabajo','email','email','nombre@empresa.com',true)}${field('pais','País','text','country-name','País donde trabajas',true,true)}
+ <div class="field full"><label for="tema">¿Qué desafío te gustaría explorar?</label><select id="tema" name="tema"><option value="">Aún no estoy seguro/a</option>${TERR.map(s=>`<option value="${s.id}" ${s.id===topic?'selected':''}>${s.short}</option>`).join('')}</select></div>
+ <div class="field full"><label for="mensaje">¿Qué está ocurriendo en tu organización? <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><textarea id="mensaje" name="mensaje" required maxlength="1200" placeholder="Comparte en pocas líneas el contexto, la necesidad o las preguntas que quieres explorar."></textarea></div></div>
+ <div class="button-row"><button type="submit" class="btn btn-dark">Ver el resumen ${arrow}</button></div><p class="form-hint">* Campos obligatorios.</p></form>
+ <div id="form-result" class="form-result" tabindex="-1" hidden></div></div></div></section>`}
+function field(id,label,type,auto,ph,req,full){return `<div class="field${full?' full':''}"><label for="${id}">${label} <span aria-hidden="true">*</span><span class="sr-only">(obligatorio)</span></label><input id="${id}" name="${id}" type="${type}" autocomplete="${auto}" placeholder="${ph}" maxlength="120" required></div>`}
+
+/* ============ Autodiagnóstico, 404 ============ */
+function diagPage(){return pageHero('Autodiagnóstico / orientación inicial','¿Por dónde <span class="serif">empezar?</span>','Cinco preguntas para identificar el desafío que conviene explorar primero. Tus respuestas se quedan en esta pantalla: no se envían ni se guardan.')
+ +`<section class="section"><div class="container"><div class="diag" id="diag"></div>${proto('<b>Nota de prototipo:</b> el cuestionario es una herramienta de orientación basada en hipótesis de lenguaje; no es un diagnóstico validado. Las opciones y su puntaje deben contrastarse con compradores reales.')}</div></section>`}
+function notFoundPage(){return pageHero('Error 404','No encontramos <span class="serif">esa página.</span>','El enlace puede haber cambiado o no existir. Puedes volver al inicio o explorar las soluciones.',`${A('Ir al inicio','#inicio','btn btn-accent')}${A('Explorar soluciones','#soluciones','btn btn-outline-light')}`)}
+
+function notesPage(){
+const li=a=>`<ul class="qa-list wide">${a.map(x=>{const i=x.indexOf('</b>')+4;return `<li>${x.slice(0,i)}<span>${x.slice(i).trim()}</span></li>`}).join('')}</ul>`;
+const sec=(eyebrow,h2,body,cls='')=>`<section class="section ${cls}"><div class="container"><div class="eyebrow">${eyebrow}</div><h2>${h2}</h2>${body}</div></section>`;
+
+const cambios=[
+ '<b>Rutas (QA-01, QA-02).</b> Cada vista tiene una URL real (<code>/solucion/talento/</code>) y su propio HTML con el contenido ya dentro. «Saltar al contenido» no cambia la URL. Una ruta inexistente muestra una página 404 propia; en el servidor responde con estado 404.',
+ '<b>Desbordes (QA-03, QA-04).</b> Los pilares de «Nosotros» pasan a una columna en pantallas angostas y el titular del hero cabe desde 320 px sin recortes. Las etiquetas orbitales del visual se apilan debajo del círculo en móvil.',
+ '<b>Contraste y color (QA-05, QA-12).</b> Todos los colores viven en <code>:root</code> como variables; el código no tiene colores HEX ni funciones rgb fuera de ese bloque. Los tonos que fallaban se oscurecieron. La paleta predeterminada es la C (azul y violeta con el lima del botón); el verde anterior, con el contraste corregido, sigue disponible en el Panel de prueba.',
+ '<b>Tamaños (QA-06, QA-16).</b> Ningún texto baja de 12 px. Los enlaces del menú (escritorio y móvil), del pie y de la franja de método miden al menos 44 px de alto; las opciones del diagnóstico son etiquetas completas de más de 44 px. Quedan párrafos secundarios de 14–15 px (véase «Qué no se resolvió»).',
+ '<b>Títulos y metadatos (QA-07, QA-18).</b> Cada vista tiene un título propio; las que comparten contenido con otra (<code>soluciones/servicios</code>, <code>contacto/…</code>) se distinguen. La descripción y las etiquetas <code>og:*</code> se actualizan por ruta; hay favicon y <code>theme-color</code> generados desde los tokens.',
+ '<b>Foco y ARIA (QA-08, QA-19).</b> Al navegar, el foco pasa al <code>h1</code> de cada vista (no en la primera carga). Se quitó el <code>&lt;aside&gt;</code> anidado en <code>&lt;main&gt;</code>; <code>aria-current</code> también marca las rutas de detalle; <code>aria-expanded</code> se restablece al pasar a escritorio.',
+ '<b>Falsas afordancias (QA-09).</b> Las cuatro etiquetas del visual y los chips de las páginas de detalle son ahora enlaces reales a territorios o especialidades.',
+ '<b>Texto repetido (QA-10).</b> Cada desafío tiene introducción, problemas, público, beneficios, bloque «Cómo intervenimos» y preguntas frecuentes propios; la frase repetida sobre las «señales» desapareció. Los títulos y el cierre de las páginas de detalle siguen siendo comunes a las cuatro.',
+ '<b>CTA único (QA-11).</b> «Conversemos de tu desafío» en cabecera, hero, franja intermedia y cierres, definido en un solo lugar del código; el secundario varía según la vista.',
+ '<b>Catálogo (QA-13).</b> Las 8 especialidades tienen página propia con los 66 ítems del brief de benchmarking, incluidos los calificadores que el prototipo había omitido. La categoría 4 se llama «Subsistemas de Talento Humano» (nombre del brief) y muestra «Gestión estratégica del talento humano» como alias; la categoría 1 conserva el nombre del prompt maestro y la 5 el del brief (véase «Decisiones abiertas»).',
+ '<b>Copy de marca y notas (QA-14).</b> Se quitó del texto de marca lo que anunciaba la ausencia de pruebas. Las notas sobre lo que falta se separaron en bloques marcados con <code>data-proto</code>, que se ocultan desde el Panel de prueba.',
+ '<b>Sin JavaScript (QA-17).</b> Hay un aviso <code>&lt;noscript&gt;</code> en lugar de una página en blanco.',
+ '<b>Formulario (QA-20).</b> Campos: nombre, correo de trabajo, país, desafío (opcional) y mensaje; no pide la organización. Validación en línea con resumen de errores, resumen en pantalla antes de copiar (insertado como texto, no como HTML) y aviso visible de que no se envía nada.'
+];
+
+const pruebas=[
+ '<b>25 rutas</b> (inicio, soluciones, 4 desafíos, 8 especialidades, nosotros, método, insights, 3 artículos, contacto, contacto con desafío, diagnóstico, notas): un solo <code>h1</code> por ruta, foco en el <code>h1</code> al navegar, título único, <code>aria-current</code> donde corresponde, 29 destinos de enlace distintos sin ninguno roto.',
+ '<b>Desborde horizontal:</b> 25 rutas × 13 anchos (320 a 1440 px), sin desbordes. Titular del hero sin recorte a 320, 340 y 360 px; 3 variantes de titular × 7 anchos, sin problemas.',
+ '<b>axe-core</b> (WCAG 2.0/2.1/2.2 A y AA más buenas prácticas): 25 rutas a 1440 y 390 px en las cuatro paletas (C, A, B y el verde anterior), sin violaciones. Con el Panel de prueba abierto, tampoco.',
+ '<b>Consola y red:</b> sin errores de página ni advertencias; sin peticiones externas (todo va en un archivo, con fuentes del sistema).',
+ '<b>Cargas en frío</b> de URL atípicas (ruta desconocida, ruta antigua con <code>#</code>): ninguna deja la página en blanco.',
+ '<b>Teclado:</b> en el inicio, las 59 paradas de tabulación muestran un anillo de foco visible; menú móvil con Escape; Panel de prueba con Escape devolviendo el foco a su botón; enlace de salto que no cambia la URL.',
+ '<b>Movimiento:</b> el giro del visual se pausa con el botón (WCAG 2.2.2) y se anula con <code>prefers-reduced-motion</code>.',
+ '<b>Formulario y diagnóstico:</b> envío vacío (4 errores enlazados con <code>aria-describedby</code>), correo inválido, envío válido con un texto malicioso de prueba (se muestra como texto, no se ejecuta); diagnóstico completo, incluido el caso de empate entre dos desafíos.',
+ '<b>Catálogo:</b> 66 ítems repartidos en las 8 especialidades (8, 8, 8, 12, 10, 10, 6 y 4).'
+];
+
+const nopruebas=[
+ '<b>Lector de pantalla</b> (NVDA, JAWS, VoiceOver): no se probó. Las comprobaciones de foco y nombres accesibles se hicieron por programa.',
+ '<b>Navegadores y dispositivos:</b> solo Chromium con Playwright. No se probó Safari ni iOS, ni dispositivos reales.',
+ '<b>Zoom al 200 % y 400 %</b>, texto ampliado y modo de alto contraste del sistema: no se probaron; solo se simuló el ancho de 320 px.',
+ '<b>Rendimiento</b> (Lighthouse, tiempo de carga) y consumo con conexión lenta: sin medir.',
+ '<b>Pruebas con personas:</b> ninguna. Que algo pase axe no demuestra que se entienda ni que convenza.'
+];
+
+const noresuelto=[
+ '<b>Texto de apoyo.</b> Quedan párrafos de 14–15 px (notas, pie y leyendas). No bajan del piso de 12 px, pero están por debajo de los 16 px que pedía la corrección QA-06 para texto corrido.',
+ '<b>Tipografía.</b> Se usan fuentes del sistema (Arial y Georgia); la identidad tipográfica final está por decidir.',
+ '<b>Marca.</b> El logo y el nombre «NODO» siguen siendo provisionales.'
+];
+
+const hipotesis=[
+ '<b>Paleta.</b> La paleta C es la predeterminada por decisión del responsable del proyecto, a partir de la indicación «los colores de consultoría son morado y azul», un dato de usuarios sin cuantificar. No está validada con las personas consultadas; A, B y el verde anterior siguen en el Panel de prueba para compararlas. Que una paleta guste no demuestra que genere confianza ni conversión.',
+ '<b>Titulares del hero.</b> Hay tres variantes (resultado, problema y la original). Ninguna está validada; el orden de prueba lo debería decidir quien conozca a los compradores.',
+ '<b>Lenguaje de roles y desafíos.</b> La relación entre cada rol y cada desafío, y las opciones y el puntaje del diagnóstico, son hipótesis de lenguaje.',
+ '<b>Calificadores del catálogo.</b> Que los compradores busquen términos como «outplacement» o «equidad salarial» es una hipótesis; se incluyen porque forman parte de la oferta, no por demanda medida.',
+ '<b>Sin datos inventados.</b> El equipo, las credenciales, los casos, las cifras de resultados, el plazo de respuesta y los datos de contacto aparecen como espacios marcados «por completar».'
+];
+
+const tomadas=[
+ '<b>Paleta.</b> C (azul y violeta, con el lima en el botón principal) como predeterminada.',
+ '<b>Titular del hero.</b> Se mantiene «Que la estrategia llegue a cómo trabaja tu gente.».',
+ '<b>Catálogo.</b> Manda el brief de benchmarking: la categoría 4 es «Subsistemas de Talento Humano» y se incluyen todos los calificadores; «Gestión estratégica del talento humano» queda como alias.',
+ '<b>Botón principal.</b> «Conversemos de tu desafío», igual en cabecera, hero y cierres.',
+ '<b>Formulario.</b> Se quita «Organización» y se agrega «País».'
+];
+const decisiones=[
+ '<b>Contacto.</b> Plazo de respuesta, duración de la primera conversación, agenda y canales de mensajería: sin definir; se muestran como espacio por completar y no se publica ningún dato ficticio.',
+ '<b>Equipo y credenciales.</b> Sin información publicable indicada; los espacios siguen marcados «por completar».',
+ '<b>Errata probable en el brief:</b> dice «estratégico, operático y táctico»; el prompt maestro y esta versión dicen «estratégicas, operativas y tácticas».',
+ '<b>Marca e idiomas.</b> El nombre «NODO», el logo y el idioma (solo español) siguen siendo provisionales.',
+ '<b>Herramientas de revisión.</b> El Panel de prueba, esta página y los bloques <code>data-proto</code> deben retirarse en la versión final.'
+];
+
+const produccion=[
+ '<b>URLs y HTML.</b> URLs reales (sin <code>#</code>) con HTML renderizado en servidor o generado de forma estática; hoy todo se pinta con JavaScript, lo que perjudica la indexación y las vistas previas al compartir.',
+ '<b>Metadatos.</b> Título, descripción, <code>canonical</code> y <code>og:*</code> por ruta en el HTML inicial, no actualizados por script.',
+ '<b>Formulario.</b> Formulario conectado a un servicio real, con aviso de privacidad y consentimiento; hoy no envía ni almacena nada.',
+ '<b>Revisión.</b> Revisión legal y de marca del nombre, el logo y el texto antes de publicar.'
+];
+
+return pageHero('Notas de prototipo','Qué cambió, qué se probó y <span class="serif">qué sigue siendo hipótesis.</span>','Página de trabajo para quien revise esta versión. No forma parte del sitio final.')
++sec('Cómo revisar esta versión','Panel de prueba',`<p>El botón circular de la esquina inferior derecha abre el panel. Permite cambiar la paleta (C, que es la predeterminada; A; B; y el verde anterior), el titular del hero (3 variantes) y mostrar u ocultar las notas de prototipo. La elección se guarda en el navegador y también se puede fijar por URL: <code>?paleta=verde|A|B|C</code>, <code>?titular=resultado|problema|original</code>, <code>?notas=0|1</code>.</p>`)
++sec('Qué cambió','Correcciones respecto del prototipo',li(cambios),'surface')
++sec('Qué se probó','Pruebas automáticas realizadas',li(pruebas))
++sec('Qué no se probó','Pendiente de verificar',li(nopruebas),'surface')
++sec('Qué no se resolvió','Límites conocidos',li(noresuelto))
++sec('Hipótesis','Lo que sigue sin validar',li(hipotesis),'surface')
++sec('Decisiones tomadas','Definido por quien dirige el proyecto',li(tomadas))
++sec('Decisiones abiertas','Pendiente de definir',li(decisiones),'surface')
++sec('Para producción','Antes de publicar',li(produccion))
+}
+
+/* ============ Estado y preferencias de prueba ============ */
+const state={h:'resultado',paused:false,palette:'C',proto:true};
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const PALETTES=[['C','C · Azul + violeta + lima (predeterminada)'],['A','A · Índigo + lavanda'],['B','B · Violeta + celeste'],['verde','Verde anterior, contraste corregido']];
+(function initState(){
+ const q=new URLSearchParams(location.search);
+ const pick=(key,valid,fallback)=>{const v=q.get(key)||store.get('nodo3-'+key);return valid.includes(v)?v:fallback};
+ state.palette=pick('paleta',PALETTES.map(p=>p[0]),'C');
+ state.h=pick('titular',Object.keys(HEADLINES),'resultado');
+ state.proto=pick('notas',['0','1'],'1')==='1';
+})();
+function applyPalette(){
+ const root=document.documentElement;root.setAttribute('data-palette',state.palette);
+ const cs=getComputedStyle(root),night=cs.getPropertyValue('--night').trim(),acc=cs.getPropertyValue('--accent').trim();
+ const tc=document.querySelector('meta[name=theme-color]');if(tc)tc.setAttribute('content',night);
+ const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="${night}"/><circle cx="20" cy="20" r="12" fill="none" stroke="${acc}" stroke-width="2"/><circle cx="20" cy="20" r="4.5" fill="${acc}"/></svg>`;
+ let ic=document.querySelector('link[rel=icon]');if(!ic){ic=document.createElement('link');ic.rel='icon';document.head.appendChild(ic)}
+ ic.href='data:image/svg+xml,'+encodeURIComponent(svg);
+}
+function applyProto(){document.body.classList.toggle('hide-proto',!state.proto)}
+
+/* ============ Cabecera, pie y panel ============ */
+const NAV=[['Inicio','#inicio','inicio'],['Soluciones','#soluciones','soluciones'],['Nosotros','#nosotros','nosotros'],['Cómo trabajamos','#metodo','metodo'],['Insights','#insights','insights']];
+const navKey=p=>({solucion:'soluciones',especialidad:'soluciones',insight:'insights'}[p]||p);
+function buildHeader(){
+ document.getElementById('header').innerHTML=`<div class="container nav-wrap">${brand}<nav aria-label="Navegación principal"><ul class="nav-list">${NAV.map(([l,h,k])=>`<li><a href="${h}" data-nav="${k}">${l}</a></li>`).join('')}</ul></nav><div class="header-actions">${A(CTA,'#contacto','btn btn-dark nav-cta')}<button type="button" class="theme-toggle" aria-label="Modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button><button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div><nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">${NAV.map(([l,h,k])=>`<a href="${h}" data-nav="${k}">${l}</a>`).join('')}${A(CTA,'#contacto','btn btn-dark')}</nav>`;
+ const btn=document.querySelector('.menu-toggle');
+ btn.addEventListener('click',()=>setMenu(!document.getElementById('mobile-nav').classList.contains('open')));
+ document.querySelector('.theme-toggle').addEventListener('click',()=>setTheme(currentTheme()==='dark'?'light':'dark',true));
+ syncThemeBtn();
+}
+function currentTheme(){return document.documentElement.getAttribute('data-theme')==='dark'?'dark':'light'}
+function syncThemeBtn(){const b=document.querySelector('.theme-toggle');if(b)b.setAttribute('aria-pressed',String(currentTheme()==='dark'))}
+function setTheme(t,save){document.documentElement.setAttribute('data-theme',t);if(save)store.set('nodo-theme',t);syncThemeBtn()}
+function setMenu(open){const m=document.getElementById('mobile-nav'),b=document.querySelector('.menu-toggle');if(!m||!b)return;m.classList.toggle('open',open);b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú')}
+function updateNav(page){const k=navKey(page);document.querySelectorAll('[data-nav]').forEach(a=>{if(a.dataset.nav===k)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')})}
+function buildFooter(){
+ document.getElementById('footer').innerHTML=`<div class="container dark"><div class="footer-main"><div>${brand}<p class="footer-desc">Estrategia organizacional con las personas en el centro. Una propuesta de consultoría para empresas que necesitan evolucionar con intención.</p><span class="tag" style="color:var(--muted-night)">Marca provisional</span></div><nav class="footer-links" aria-label="Explorar"><b>Explorar</b>${NAV.map(([l,h])=>`<a href="${h}">${l}</a>`).join('')}<a href="#diagnostico">Autodiagnóstico</a><a href="#contacto">Contacto</a></nav><nav class="footer-links" aria-label="Soluciones"><b>Soluciones</b>${TERR.map(s=>`<a href="#solucion/${s.id}">${s.short}</a>`).join('')}<a href="#soluciones/servicios">Ver especialidades</a></nav></div><div class="footer-low"><span>© 2026 NODO · Prototipo conceptual con marca provisional. Sin recolección ni envío de datos.</span><a href="#notas">Notas de prototipo</a></div></div>`;
+}
+function buildLab(){
+ const wrap=document.createElement('div');
+ wrap.innerHTML=`<button type="button" class="lab-btn" id="lab-btn" aria-expanded="false" aria-controls="lab"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 6h9m4 0h1M3 14h1m4 0h9"/><circle cx="14" cy="6" r="2"/><circle cx="6" cy="14" r="2"/></svg><span>Panel de prueba</span></button>
+ <section class="lab" id="lab" hidden aria-labelledby="lab-title"><h2 id="lab-title">Panel de prueba</h2><p>Herramientas del prototipo para comparar opciones. No forman parte del sitio final.</p>
+ <fieldset><legend>Paleta de color</legend>${PALETTES.map(([v,l])=>`<label><input type="radio" name="lab-pal" value="${v}"> ${l}<span class="swatches sw-${v}" aria-hidden="true"><i></i><i></i><i></i></span></label>`).join('')}</fieldset>
+ <fieldset><legend>Titular del inicio</legend>${Object.entries(HEADLINES).map(([v,h])=>`<label><input type="radio" name="lab-h" value="${v}"> ${h.label}</label>`).join('')}</fieldset>
+ <fieldset><legend>Notas</legend><label><input type="checkbox" id="lab-proto"> Mostrar notas de prototipo</label></fieldset>
+ <a class="close" href="#notas">Ver notas de prototipo</a> · <button type="button" class="close" id="lab-close" style="background:none;border:0;padding:0;color:inherit">Cerrar</button></section>`;
+ document.body.append(...wrap.children);
+ const btn=document.getElementById('lab-btn'),lab=document.getElementById('lab');
+ const sync=()=>{lab.querySelectorAll('[name=lab-pal]').forEach(r=>r.checked=r.value===state.palette);lab.querySelectorAll('[name=lab-h]').forEach(r=>r.checked=r.value===state.h);document.getElementById('lab-proto').checked=state.proto};
+ const setLab=open=>{lab.hidden=!open;btn.setAttribute('aria-expanded',String(open));if(open)sync()};
+ btn.addEventListener('click',()=>setLab(lab.hidden));
+ document.getElementById('lab-close').addEventListener('click',()=>{setLab(false);btn.focus()});
+ lab.addEventListener('change',e=>{
+  const t=e.target;
+  if(t.name==='lab-pal'){state.palette=t.value;store.set('nodo3-paleta',t.value);applyPalette()}
+  else if(t.name==='lab-h'){state.h=t.value;store.set('nodo3-titular',t.value);if(currentPage==='inicio')render(false)}
+  else if(t.id==='lab-proto'){state.proto=t.checked;store.set('nodo3-notas',t.checked?'1':'0');applyProto()}
+ });
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!lab.hidden){setLab(false);btn.focus()}});
+ window.nodoSetLab=setLab;
+}
+
+/* ============ Interacciones por página ============ */
+function setupSolutions(mode){
+ const out=document.getElementById('explore-content');if(!out)return;
+ const svc=mode==='service';
+ document.getElementById('by-challenge').setAttribute('aria-pressed',String(!svc));
+ document.getElementById('by-service').setAttribute('aria-pressed',String(svc));
+ out.innerHTML=exploreHtml(svc);
+ document.getElementById('by-challenge').onclick=()=>{setupSolutions('challenge');history.replaceState(null,'','/soluciones/'+location.search)};
+ document.getElementById('by-service').onclick=()=>{setupSolutions('service');history.replaceState(null,'','/soluciones/servicios/'+location.search)};
+}
+function setupHero(){
+ const b=document.getElementById('motion-toggle'),v=document.getElementById('visual');if(!b||!v)return;
+ b.addEventListener('click',()=>{state.paused=!state.paused;v.classList.toggle('paused',state.paused);b.setAttribute('aria-pressed',String(state.paused))});
+}
+function setupContact(){
+ const f=document.getElementById('contact-form');if(!f)return;
+ const sumBox=document.getElementById('err-summary'),res=document.getElementById('form-result');
+ const rules=[['nombre','Escribe tu nombre.',v=>v.trim().length>0],['correo','Escribe un correo de trabajo con formato válido, por ejemplo nombre@empresa.com.',v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())],['pais','Escribe el país donde trabajas.',v=>v.trim().length>0],['mensaje','Cuéntanos brevemente qué está ocurriendo en tu organización.',v=>v.trim().length>0]];
+ const clear=()=>{sumBox.hidden=true;sumBox.innerHTML='';f.querySelectorAll('.field-error').forEach(e=>e.remove());f.querySelectorAll('[aria-invalid]').forEach(i=>{i.removeAttribute('aria-invalid');i.removeAttribute('aria-describedby')})};
+ f.addEventListener('submit',e=>{
+  e.preventDefault();clear();res.hidden=true;
+  const bad=rules.filter(([id,,ok])=>!ok(f.elements[id].value));
+  if(bad.length){
+   bad.forEach(([id,msg])=>{const el=f.elements[id];el.setAttribute('aria-invalid','true');el.setAttribute('aria-describedby','err-'+id);const p=document.createElement('p');p.className='field-error';p.id='err-'+id;p.textContent=msg;el.parentNode.appendChild(p)});
+   sumBox.innerHTML=`<b>Revisa ${bad.length===1?'este campo':'estos '+bad.length+' campos'} para continuar:</b><ul>${bad.map(([id,msg])=>`<li><a href="#${id}" data-field="${id}">${msg}</a></li>`).join('')}</ul>`;
+   sumBox.hidden=false;sumBox.focus();
+   sumBox.querySelectorAll('[data-field]').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault();f.elements[a.dataset.field].focus()}));
+   return;
+  }
+  const d=new FormData(f),sel=byId(TERR,d.get('tema'));
+  const summary=`SOLICITUD DE CONTACTO (DEMO, NO ENVIADA)\nNombre: ${d.get('nombre')}\nCorreo: ${d.get('correo')}\nPaís: ${d.get('pais')}\nDesafío: ${sel?sel.short:'Por definir'}\nMensaje: ${d.get('mensaje')}`;
+  res.innerHTML=`<h3>Vista previa lista · no se envió nada</h3><p class="small" style="margin:0">Este resumen se preparó únicamente en tu navegador. Revísalo; puedes copiarlo o volver a editar.</p><div class="summary" id="summary-text"></div><div class="button-row"><button type="button" class="btn btn-outline" id="copy-summary">Copiar resumen ${arrow}</button><button type="button" class="btn btn-outline" id="edit-form">Editar</button></div><p class="small" id="copy-status" role="status" style="margin:12px 0 0"></p>`;
+  res.querySelector('#summary-text').textContent=summary;
+  res.hidden=false;res.focus();
+  const status=res.querySelector('#copy-status');
+  res.querySelector('#copy-summary').addEventListener('click',async()=>{
+   try{await navigator.clipboard.writeText(summary);status.textContent='Resumen copiado. Ningún dato fue enviado.'}
+   catch(err){const t=document.createElement('textarea');t.value=summary;t.setAttribute('aria-hidden','true');document.body.appendChild(t);t.select();try{document.execCommand('copy');status.textContent='Resumen copiado. Ningún dato fue enviado.'}catch(e2){status.textContent='No fue posible copiar automáticamente; selecciona el texto y cópialo.'}t.remove()}
+  });
+  res.querySelector('#edit-form').addEventListener('click',()=>{res.hidden=true;f.elements.nombre.focus()});
+ });
+ f.addEventListener('input',e=>{const el=e.target;if(el.getAttribute&&el.getAttribute('aria-invalid')){el.removeAttribute('aria-invalid');el.removeAttribute('aria-describedby');const er=document.getElementById('err-'+el.id);if(er)er.remove()}});
+}
+function setupDiag(){
+ const root=document.getElementById('diag');if(!root)return;
+ let i=0;const ans=Array(DIAG.length).fill(null);let first=true;
+ const progress=()=>`<ol class="progress" aria-hidden="true">${DIAG.map((_,k)=>`<li class="${k<i?'done':k===i?'now':''}"></li>`).join('')}</ol>`;
+ function question(){
+  const q=DIAG[i];
+  root.innerHTML=`${progress()}<form id="dq" novalidate><fieldset><legend tabindex="-1" id="dleg"><span class="topic-label">Pregunta ${i+1} de ${DIAG.length}</span>${q[0]}</legend>${q[1].map((o,k)=>`<label class="opt${ans[i]===k?' is-checked':''}"><input type="radio" name="q" value="${k}" ${ans[i]===k?'checked':''}><span>${o[1]}</span></label>`).join('')}</fieldset><p class="field-error" id="dq-err" role="alert" hidden>Elige una opción para continuar.</p><div class="diag-nav"><button type="button" class="btn btn-outline" id="dback" ${i===0?'disabled style="visibility:hidden"':''}>Anterior</button><button type="submit" class="btn btn-dark">${i===DIAG.length-1?'Ver resultado':'Siguiente'} ${arrow}</button></div></form>`;
+  if(!first)document.getElementById('dleg').focus();first=false;
+  const form=document.getElementById('dq');
+  form.addEventListener('submit',e=>{e.preventDefault();const c=form.querySelector('input:checked');if(!c){document.getElementById('dq-err').hidden=false;form.querySelector('input').focus();return}ans[i]=+c.value;if(i<DIAG.length-1){i++;question()}else result()});
+  form.addEventListener('change',()=>{document.getElementById('dq-err').hidden=true;form.querySelectorAll('.opt').forEach(o=>o.classList.toggle('is-checked',o.querySelector('input').checked))});
+  const back=document.getElementById('dback');if(back)back.addEventListener('click',()=>{const c=form.querySelector('input:checked');if(c)ans[i]=+c.value;i--;question()});
+ }
+ function result(){
+  const score=Object.fromEntries(TERR.map(t=>[t.id,0]));ans.forEach((a,k)=>{score[DIAG[k][1][a][0]]++});
+  const order=TERR.map(t=>t.id).sort((a,b)=>score[b]-score[a]);const top=score[order[0]];const leaders=order.filter(id=>score[id]===top);
+  const names=leaders.map(id=>byId(TERR,id));
+  root.innerHTML=`<div class="result-card" id="dres" tabindex="-1"><span class="topic-label">Resultado orientativo</span><h2>${names.length===1?`Conviene explorar primero: <span class="serif">${names[0].short.toLowerCase()}.</span>`:`Dos desafíos empatan: <span class="serif">${names.map(n=>n.short.toLowerCase()).join(' y ')}.</span>`}</h2><p class="lead muted">${names.map(n=>n.desc).join(' ')}</p><ul class="bars" aria-label="Coincidencia por desafío">${order.map(id=>`<li><span>${byId(TERR,id).short}</span><span class="bar" aria-hidden="true"><i style="width:${score[id]/DIAG.length*100}%"></i></span><span>${score[id]} de ${DIAG.length}</span></li>`).join('')}</ul><div class="button-row">${names.map(n=>A(`Explorar: ${n.short}`,`#solucion/${n.id}`,'btn btn-dark')).join('')}${A(CTA,`#contacto/${names[0].id}`,'btn btn-outline')}</div><p class="small muted" style="margin:22px 0 0">Es una orientación inicial basada en tus respuestas, no un diagnóstico organizacional. No se guardó ni se envió nada. <button type="button" id="dredo" class="link-u" style="background:none;border:0;padding:0;font-weight:700;min-height:44px">Volver a empezar</button></p></div>`;
+  document.getElementById('dres').focus();
+  document.getElementById('dredo').addEventListener('click',()=>{i=0;ans.fill(null);first=false;question()});
+ }
+ question();
+}
+
+/* ============ Enrutador ============ */
+let currentPage='',hasRendered=false;
+const META={
+ inicio:['NODO · Consultoría para organizaciones que evolucionan','Consultoría de transformación organizacional, talento, liderazgo y cultura. Empezamos por tu desafío y acompañamos hasta que el cambio se sostenga.'],
+ soluciones:['Soluciones de consultoría organizacional y de talento · NODO','Cuatro desafíos de negocio y ocho especialidades: estructura, talento, cambio y experiencia de trabajo. Elige por dónde empezar y conversemos con NODO.'],
+ nosotros:['Nosotros: filosofía y principios de trabajo · NODO','Filosofía y principios de trabajo de NODO, una consultoría que conecta decisiones estratégicas con el funcionamiento real de las organizaciones.'],
+ metodo:['Cómo trabajamos: entender, diseñar, activar, sostener · NODO','El ciclo NODO en cuatro momentos: entender, diseñar, activar y sostener, con diagnóstico, cocreación y acompañamiento hasta que el cambio se sostenga.'],
+ insights:['Insights sobre transformación, talento y cultura · NODO','Agenda editorial de NODO sobre transformación, talento, liderazgo, cultura y nuevas formas de trabajo. Los artículos se publicarán con autor, fecha y fuentes.'],
+ contacto:['Contacto: conversemos de tu desafío organizacional · NODO','Cuéntanos qué ocurre en tu organización y qué te gustaría explorar, y acordemos una primera conversación exploratoria sin compromiso con NODO.'],
+ diagnostico:['Autodiagnóstico: qué desafío explorar primero · NODO','Cinco preguntas para identificar qué desafío conviene explorar primero. El resultado se calcula en tu navegador y no se envían ni se guardan datos.'],
+ notas:['Notas de prototipo · NODO','Qué cambió en esta versión, qué se probó y qué sigue siendo hipótesis.'],
+ nf:['Página no encontrada · NODO','La página que buscas no existe o cambió de dirección.']
+};
+const SEO={"inicio":["NODO · Consultoría para organizaciones que evolucionan","Consultoría de transformación organizacional, talento, liderazgo y cultura. Empezamos por tu desafío y acompañamos hasta que el cambio se sostenga."],"soluciones":["Soluciones de consultoría organizacional y de talento · NODO","Cuatro desafíos de negocio y ocho especialidades: estructura, talento, cambio y experiencia de trabajo. Elige por dónde empezar y conversemos con NODO."],"soluciones/servicios":["Especialidades de consultoría en talento y cultura · NODO","Las ocho líneas de servicio de NODO con sus áreas de intervención: estructura, trabajo, cambio, talento, formación, coaching, cultura y bienestar."],"solucion/organizacion":["Evolucionar la organización: estructura y decisiones · NODO","Revisamos cómo se organiza, decide y trabaja tu empresa para que la estrategia se pueda ejecutar. Conversemos de tu desafío con el equipo de NODO."],"solucion/talento":["Preparar el talento: habilidades y aprendizaje · NODO","Conectamos la estrategia de talento, las habilidades y el aprendizaje con las prioridades reales del negocio. Conversemos de tu desafío con NODO."],"solucion/cambio":["Movilizar el cambio: líderes y equipos listos · NODO","Preparamos a líderes y equipos para entender, asumir y sostener nuevas maneras de trabajar en tu organización. Conversemos de tu desafío con NODO."],"solucion/experiencia":["Mejorar la experiencia de trabajo en tu empresa · NODO","Diseñamos culturas y entornos que favorezcan el compromiso, la colaboración y un bienestar sostenible. Conversemos de tu desafío con el equipo de NODO."],"especialidad/transformacion":["Transformación y diseño organizacional para empresas · NODO","Revisamos cómo está organizada la empresa, cómo se toman las decisiones y cómo fluye el trabajo, y diseñamos el modelo que la estrategia necesita."],"especialidad/trabajo":["Nuevas formas de trabajo y agilidad para equipos · NODO","Ayudamos a definir cómo se trabaja en equipo, con tecnología y a distancia: acuerdos, marcos y prácticas que se adaptan a cada contexto. Conversemos con NODO."],"especialidad/cambio":["Gestión del cambio: adopción en las personas · NODO","Preparamos a las personas para entender, adoptar y sostener un cambio: desde el mapa de interesados hasta la medición de la adopción. Conversemos con NODO."],"especialidad/talento":["Subsistemas de Talento Humano: selección y carrera · NODO","Conectamos los procesos de talento —selección, desempeño, carrera, compensación— con lo que el negocio necesita, y los hacemos coherentes entre sí."],"especialidad/formacion":["Formación y desarrollo del talento: aprendizaje útil · NODO","Diseñamos rutas de aprendizaje que parten de las brechas reales y se miden por lo que cambia en el trabajo, no solo por la asistencia. Conversemos con NODO."],"especialidad/coaching":["Coaching y liderazgo para equipos directivos · NODO","Acompañamos a personas y equipos directivos en su desarrollo como líderes, con procesos individuales, de equipo y programas para mandos medios."],"especialidad/cultura":["Cultura, clima y experiencia del colaborador · NODO","Entendemos cómo se vive la cultura hoy, la comparamos con la que se quiere y diseñamos prácticas concretas para acercarlas. Conversemos de tu desafío con NODO."],"especialidad/bienestar":["Bienestar y salud mental organizacional en el trabajo · NODO","Evaluamos las condiciones de trabajo que afectan la salud y el desempeño, y diseñamos acciones organizacionales, no solo actividades aisladas."],"nosotros":["Nosotros: filosofía y principios de trabajo · NODO","Filosofía y principios de trabajo de NODO, una consultoría que conecta decisiones estratégicas con el funcionamiento real de las organizaciones."],"metodo":["Cómo trabajamos: entender, diseñar, activar, sostener · NODO","El ciclo NODO en cuatro momentos: entender, diseñar, activar y sostener, con diagnóstico, cocreación y acompañamiento hasta que el cambio se sostenga."],"insights":["Insights sobre transformación, talento y cultura · NODO","Agenda editorial de NODO sobre transformación, talento, liderazgo, cultura y nuevas formas de trabajo. Los artículos se publicarán con autor, fecha y fuentes."],"contacto":["Contacto: conversemos de tu desafío organizacional · NODO","Cuéntanos qué ocurre en tu organización y qué te gustaría explorar, y acordemos una primera conversación exploratoria sin compromiso con NODO."],"diagnostico":["Autodiagnóstico: qué desafío explorar primero · NODO","Cinco preguntas para identificar qué desafío conviene explorar primero. El resultado se calcula en tu navegador y no se envían ni se guardan datos."]};
+const SITE='https://dominio-por-definir.example';
+function pathRoute(){let r;try{r=decodeURIComponent(location.pathname)}catch(e){return'__invalido__'}return r.replace(/index\.html$/,'').replace(/^\/+|\/+$/g,'')}
+function routeKey(){return pathRoute()||'inicio'}
+function canonicalFor(k){if(k==='inicio')return SITE+'/';const p=k.split('/');if(p[0]==='contacto')return SITE+'/contacto/';return SITE+'/'+k+'/'}
+const ROUTE_WORDS=/^(inicio|soluciones|solucion|especialidad|nosotros|metodo|insights|insight|diagnostico|notas|contacto)$/;
+function mapHref(h){const x=h.slice(1);if(!ROUTE_WORDS.test(x.split('/')[0]))return null;return x==='inicio'?'/':'/'+x.replace(/\/+$/,'')+'/'}
+function fixHrefs(){document.querySelectorAll('a[href^="#"]').forEach(a=>{const m=mapHref(a.getAttribute('href'));if(m)a.setAttribute('href',m)})}
+function resolve(){
+ let r=pathRoute();
+ if(!r)r='inicio';
+ const parts=r.split('/'),page=parts[0],id=parts[1],n=parts.length;
+ const nf={page:'nf',html:notFoundPage(),meta:META.nf};
+ if(n>2)return nf;
+ switch(page){
+  case 'inicio':return n===1?{page,html:home(),meta:META.inicio,setup:setupHero}:nf;
+  case 'soluciones':if(n===1||id==='servicios')return {page,html:solutionsPage(),meta:id==='servicios'?['Especialidades · NODO','Las ocho líneas de servicio de NODO con sus áreas de intervención: estructura, trabajo, cambio, talento, formación, coaching, cultura y bienestar.']:META.soluciones,setup:()=>setupSolutions(id==='servicios'?'service':'challenge'),scrollTo:id==='servicios'?'.switch':null};return nf;
+  case 'solucion':{const s=byId(TERR,id);return s?{page,html:detailPage(s),meta:[`${s.short} · NODO`,s.desc]}:nf}
+  case 'especialidad':{const c=byId(SPEC,id);return c?{page,html:specialtyPage(c),meta:[`${c.name} · NODO`,c.lead]}:nf}
+  case 'nosotros':case 'metodo':case 'insights':case 'diagnostico':case 'notas':
+   if(n!==1)return nf;
+   return {page,html:{nosotros:aboutPage,metodo:methodPage,insights:insightsPage,diagnostico:diagPage,notas:notesPage}[page](),meta:META[page],setup:page==='diagnostico'?setupDiag:null};
+  case 'insight':{const a=byId(ARTICLES,id);return a?{page,html:insightDetailPage(a),meta:[`${a.title} · NODO`,a.desc]}:nf}
+  case 'contacto':if(n===1||byId(TERR,id))return {page,html:contactPage(id),meta:id?[`Contacto sobre ${byId(TERR,id).short.toLowerCase()} · NODO`,META.contacto[1]]:META.contacto,setup:setupContact};return nf;
+  default:return nf;
+ }
+}
+function setMeta(m,noindex,canon){
+ document.title=m[0];
+ let cl=document.querySelector('link[rel=canonical]');
+ if(canon){if(!cl){cl=document.createElement('link');cl.rel='canonical';document.head.appendChild(cl)}cl.href=canon}else if(cl)cl.remove();
+ const set=(sel,attr,val)=>{let el=document.querySelector(sel);if(!el){el=document.createElement('meta');const mm=sel.match(/\[(name|property)="([^"]+)"\]/);el.setAttribute(mm[1],mm[2]);document.head.appendChild(el)}el.setAttribute(attr,val)};
+ set('meta[name="description"]','content',m[1]);set('meta[property="og:title"]','content',m[0]);set('meta[property="og:description"]','content',m[1]);set('meta[property="og:type"]','content','website');if(canon)set('meta[property="og:url"]','content',canon);set('meta[property="og:locale"]','content','es_LA');
+ set('meta[name="robots"]','content',noindex?'noindex,follow':'index,follow');
+}
+function render(moveFocus,hydrate){
+ const r=resolve();currentPage=r.page;
+ const main=document.getElementById('contenido');
+ if(!(hydrate&&main.dataset.route===routeKey()))main.innerHTML=r.html;
+ main.dataset.route=routeKey();
+ updateNav(r.page);setMenu(false);setMeta(r.page!=='nf'&&SEO[routeKey()]?SEO[routeKey()]:r.meta,r.page==='insight'||r.page==='notas'||r.page==='nf',r.page==='nf'?null:canonicalFor(routeKey()));
+ if(r.setup)r.setup();fixHrefs();
+ if(r.scrollTo){const el=document.querySelector(r.scrollTo);if(el)el.scrollIntoView({block:'center',behavior:'auto'})}else if(moveFocus!==false)window.scrollTo({top:0,behavior:'auto'});
+ if(moveFocus!==false&&hasRendered){const h=main.querySelector('h1');if(h)h.focus({preventScroll:true});else main.focus({preventScroll:true})}
+ hasRendered=true;
+}
+
+/* ============ Arranque ============ */
+applyPalette();applyProto();buildHeader();buildFooter();buildLab();
+document.getElementById('skip-link').addEventListener('click',e=>{e.preventDefault();document.getElementById('contenido').focus()});
+window.addEventListener('popstate',()=>render(true));
+document.addEventListener('click',e=>{
+ if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+ const a=e.target.closest&&e.target.closest('a[href]');if(!a||a.target||a.hasAttribute('download'))return;
+ let h=a.getAttribute('href');if(h&&h[0]==='#'){const m=mapHref(h);if(!m)return;h=m}
+ if(!h||h[0]!=='/'||h[1]==='/')return;
+ e.preventDefault();history.pushState(null,'',h);render(true);
+});
+try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',e=>{if(!store.get('nodo-theme'))setTheme(e.matches?'dark':'light',false)})}catch(e){}
+window.matchMedia('(min-width: 861px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const m=document.getElementById('mobile-nav');if(m&&m.classList.contains('open')){setMenu(false);document.querySelector('.menu-toggle').focus()}}});
+if(location.protocol==='file:'){const b=document.createElement('div');b.className='file-banner';b.textContent='Abre este sitio desde un servidor local (ver LEEME.txt): las rutas reales no funcionan desde un archivo.';document.body.prepend(b);fixHrefs()}
+else{
+const lm=location.hash.match(/^#((?:inicio|soluciones|solucion|especialidad|nosotros|metodo|insights|insight|diagnostico|notas|contacto)(?:\/[^?#]*)?)$/);
+if(lm&&(location.pathname==='/'||/index\.html$/.test(location.pathname)))history.replaceState(null,'','/'+(lm[1]==='inicio'?'':lm[1].replace(/\/+$/,'')+'/')+location.search);
+render(false,true);
+}
+
+})();
+</script><button type="button" class="lab-btn" id="lab-btn" aria-expanded="false" aria-controls="lab"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M3 6h9m4 0h1M3 14h1m4 0h9"></path><circle cx="14" cy="6" r="2"></circle><circle cx="6" cy="14" r="2"></circle></svg><span>Panel de prueba</span></button><section class="lab" id="lab" hidden="" aria-labelledby="lab-title"><h2 id="lab-title">Panel de prueba</h2><p>Herramientas del prototipo para comparar opciones. No forman parte del sitio final.</p>
+ <fieldset><legend>Paleta de color</legend><label><input type="radio" name="lab-pal" value="C"> C · Azul + violeta + lima (predeterminada)<span class="swatches sw-C" aria-hidden="true"><i></i><i></i><i></i></span></label><label><input type="radio" name="lab-pal" value="A"> A · Índigo + lavanda<span class="swatches sw-A" aria-hidden="true"><i></i><i></i><i></i></span></label><label><input type="radio" name="lab-pal" value="B"> B · Violeta + celeste<span class="swatches sw-B" aria-hidden="true"><i></i><i></i><i></i></span></label><label><input type="radio" name="lab-pal" value="verde"> Verde anterior, contraste corregido<span class="swatches sw-verde" aria-hidden="true"><i></i><i></i><i></i></span></label></fieldset>
+ <fieldset><legend>Titular del inicio</legend><label><input type="radio" name="lab-h" value="resultado"> Resultado (propuesta principal)</label><label><input type="radio" name="lab-h" value="problema"> Problema del decisor</label><label><input type="radio" name="lab-h" value="original"> Versión original</label></fieldset>
+ <fieldset><legend>Notas</legend><label><input type="checkbox" id="lab-proto"> Mostrar notas de prototipo</label></fieldset>
+ <a class="close" href="/notas/">Ver notas de prototipo</a> · <button type="button" class="close" id="lab-close" style="background:none;border:0;padding:0;color:inherit">Cerrar</button></section>
+
+
+</body></html>
