@@ -1,0 +1,3 @@
+# STAGING: no indexar
+User-agent: *
+Disallow: /
